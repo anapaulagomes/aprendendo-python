@@ -1,0 +1,27 @@
+baseurl = "http://example.org/"
+languageCode = "pt-br"
+title = "Aprendendo Python"
+theme = "hugo-cards"
+paginate = 6
+
+[params]
+  builtBy = "bool"
+  defaultImage = "gopher.jpg"
+
+  facebook = ""
+  quora = ""
+  twitter = ""
+  github = "http://github.com/anapaulagomes/aprendendo-python"
+  email = ""
+
+  fbLikeBox = ""
+  fbAppId = ""
+  fbPageUrl = ""
+  fbPageTitle = ""
+
+  analytics = ""
+  disqus = ""
+
+  [params.copyright]
+     name = "bool"
+     link = "https://bool.netlify.com"

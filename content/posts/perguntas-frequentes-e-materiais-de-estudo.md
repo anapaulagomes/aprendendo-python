@@ -2,7 +2,6 @@
 layout: post
 title: FAQ e materiais
 img: image-5.png
-tags: ["aprendizado", "materiais"]
 date: "2019-11-08"
 ---
 
@@ -22,6 +21,7 @@ Em Feira tem o ProgramAda, DevFSA, GruPy-FSA.
 
 # Materiais para estudo e links interessantes
 
-Python para Zumbis
-
-Git e GitHub
+* [Python Básico](https://solyd.com.br/treinamentos/python-basico): curso online com exercícios e certificado
+* [Python para Zumbis](https://github.com/fmasanori/PPZ)
+* [Tutorial Django Girls](https://tutorial.djangogirls.org/pt/)
+* [Git e GitHub]()

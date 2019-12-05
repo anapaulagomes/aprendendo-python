@@ -3,14 +3,80 @@ layout: page
 title: Planejamento das Aulas
 ---
 
-Esse curso foi planejado para quem nunca programou na vida.
-As cinco aulas foram idealizadas para um curso de 20 horas
-de duração, porém podem ser executadas de maneira independente
-(contanto que o básico, abordado na aula 1, seja coberto antes).
+Esse curso foi pensado para quem nunca programou na vida.
+Divido em **5 aulas**, o curso tem duração total de **20 horas**,
+podendo ser executadas de maneira independente (contanto que
+o básico, abordado na aula 1, seja coberto antes).
 
 Para que os alunos vejam o quão empolgante e as inúmeras
 possibilidades que programar traz, este curso busca ter um projeto
 por aula. Os projetos são bem definidos porém deixam espaço para
 que o aluno proponha ideias e aplique em áreas que o interessa mais.
+Você pode encontrar outras ideias para aplicar nas aulas [aqui](/pages/ideias/).
 
-Você pode encontrar outras ideias para aplicar nas aulas [aqui]().
+Aqui uma proposta de agenda para as aulas:
+
+### Aula 1: Olá, mundo!
+
+Projeto da aula: Adivinhando um número
+
+| Duração     | Tópico          | Conteúdo  |
+| :---------: | :-------------: | :----- |
+| 00:00       | Apresentação  | Momento para conhecer os alunos e eles te conhecerem também |
+| 00:15       | Introdução aos computadores | O que é um computador, como tudo começou, o que é a internet, sistemas operacionais e programas de computador |
+| 00:30       | O terminal | Uso básico do terminal: como navegar entre diretórios, ver e criar arquivos, diretório atual |
+| 01:00       | Olá, mundo! | Hora de criar um arquivo Python e rodar o famoso "Olá, mundo!" |
+| 01:15       | REPL, Variáveis e tipos de dados | Strings, inteiros, float |
+| 01:45       | Listas e dicionários |  |
+| 02:15       | Estruturas de controle | `if/else` |
+| 02:45       | Laços | `for/while` |
+| 03:15       | Operadores matemáticos e entrada de dados | `+, -, *, //, /` e `input` |
+| 03:30       | Exercício | Sugestão: implementar os jogos: Adivinhando um número |
+| 04:00       | Recapitulando! | Uma revisão do que foi abordado com um jogo de perguntas e respostas. |
+
+### Aula 2: Seu próprio bot
+
+Projeto da aula:
+
+| Duração     | Tópico          | Conteúdo  |
+| :---------: | :-------------: | :----- |
+| 00:00       | Revisão da aula anterior | Variáveis, tipos, estruturas de controle e laço, entrada de dados |
+| 00:15       |  |  |
+
+
+Aula 6 – Tuplas, Dicionários e Conjuntos
+Aula 7 – Funções e métodos
+Aula 8 – Argumentos de linha de comando
+Aula 9 – Orientação a objeto
+Aula 10 – Entrada e saída de arquivos
+Aula 11 – Tratamento de erros e exceções (TRY e EXCEPT)
+
+### Aula 3: Dados Abertos
+
+Projeto da aula: hackeando dados da prefeitura de Feira de Santana
+
+| Duração     | Tópico          | Conteúdo  |
+| :---------: | :-------------: | :----- |
+| 00:00       | Revisão da aula anterior |  |
+| 00:15       | O conceito de hacker |  |
+
+### Aula 4: APIs
+
+Projeto da aula: 
+
+| Duração     | Tópico          | Conteúdo  |
+| :---------: | :-------------: | :----- |
+| 00:00       | Revisão da aula anterior |  |
+| 00:15       |  |  |
+
+### Aula 5: Seu bot na rua
+
+Projeto da aula: Deploy do bot criado pelos alunos no [PythonAnywhere](https://www.pythonanywhere.com/)
+
+| Duração     | Tópico          | Conteúdo  |
+| :---------: | :-------------: | :----- |
+| 00:00       | Revisão da aula anterior |  |
+| 00:15       | I que é um deploy? |  |
+
+
+Lembrando que essa agenda é só uma sugestão e pode ser modificada a qualquer momento.

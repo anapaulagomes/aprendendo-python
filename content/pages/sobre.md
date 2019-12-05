@@ -3,13 +3,22 @@ layout: page
 title: Sobre
 ---
 
-Hugo cards is a Bootstrap based theme ported from the Jekyll theme [Webjeda-cards](https://webjeda.com/cards/). Any Bootstrap element can be used in the theme.
+Até hoje não houve nada que me deixasse tão maravilhada
+quanto o que é possível fazer com programação. E eu gostaria
+de passar esse "super poder" adiante. :)
 
-For more themes, visit [Hugo Themes](https://themes.gohugo.io/)
+Esse curso de Python foi criado para introduzir pessoas que
+nunca programaram a programação e o objetivo é fazer com que
+esse processo seja o mais divertido possível.
 
-**Does the theme deserve a star?**
+O curso é **gratuito**. Para colaborar abra um _Pull Request_ ou
+deixe a sua _issue_ no repositório [Aprendendo Python](https://github.com/anapaulagomes/aprendendo-python).
 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/bul-ikana/hugo-cards" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star bul-ikana/hugo-cards on GitHub">Star</a>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+Fique a vontade para usá-lo para disseminar o conhecimento
+de programação na sua comunidade local. Se possível mande seu
+relato ou fotos. Vou ficar super feliz em saber que o conteúdo
+desse curso foi usado em outros lugares. :)
+
+Achou legal? Quer contribuir? Trocar ideias?
+
+Diga oi no <a href="mailto:aprendendopython@anapaulagomes.me">aprendendopython@anapaulagomes.me</a>.

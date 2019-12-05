@@ -2,7 +2,6 @@
 layout: post
 title:  "Aula 5: Seu bot na rua"
 img: "image-5.png"
-category: two
 date: "2019-11-13"
 ---
 

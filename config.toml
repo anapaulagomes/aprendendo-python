@@ -2,7 +2,7 @@ baseurl = "http://example.org/"
 languageCode = "pt-br"
 title = "Aprendendo Python"
 theme = "hugo-cards"
-paginate = 6
+paginate = 9
 
 [params]
   builtBy = "bool"

@@ -7,17 +7,42 @@ date: "2019-11-08"
 
 # Perguntas Frequentes
 
-1. Eu preciso saber matemática pra ser uma pessoa programadora?
+**Eu preciso saber matemática pra ser uma pessoa programadora?**
 
-Não. Originalmente eu queria ser advogada e minha atenção estava toda focada em história, geografia e português. Minhas notas em matemática e física eram as piores. Graças a vários acasos acabei parando na área de computação e, apesar de matemática ser a fundação de muitas coisas, você não precisa derivar ou implementar cálculos complexos em 90% dos casos (essa estatística foi 100% retirada da minha cabeça). 
+Não. Originalmente eu queria ser advogada e minha atenção estava
+toda focada em história, geografia e português. Minhas notas em
+matemática e física eram as piores. Graças a vários acasos acabei
+parando na área de computação e, apesar de matemática ser a
+fundação de muitas coisas, você não precisa derivar ou implementar
+cálculos complexos em 90% dos casos (essa estatística foi 100%
+retirada da minha cabeça).
 
-2. Existem outras pessoas se reunindo para falar sobre programação e trocar ideia?
+**Existem outras pessoas se reunindo para falar sobre programação e trocar ideia?**
 
-Sim! Pyladies, AfroPython.
-Em Feira tem o ProgramAda, DevFSA, GruPy-FSA.
+Sim! Esses grupos são chamados de comunidades. 💛
+Comunidades de Python podem ser locais, como o GruPY-FSA (grupo de usuários Python de
+Feira de Santana) ou para grupos de mulheres (Pyladies) ou pessoas negras (AfroPython).
+Em Feira existem outros grupos gerais relacionados a tecnologia, como o ProgramAda
+(voltado para mulheres na computação) e o DevFSA (para pessoas desenvolvedoras em
+Feira de Santana).
 
-3. O que dá pra fazer com Python?
-4. Eu preciso saber falar inglês?
+**O que dá pra fazer com Python?**
+
+Tudo. :) Você conhece aquele app chamado [Instagram](instagram.com)?
+Boa parte dele é feita em Python.
+Existem vários outros produtos que não super legais e também feitas
+com a linguagem. Tem dispositivo para para máquinas que estejam desmatando,
+tem a [Rosie](https://twitter.com/RosieDaSerenata)
+(robô que analisa e identifca gastos suspeitos de deputados federais) e muito mais!
+
+**Eu preciso saber falar inglês?**
+
+Não. Mas será inevitável aprender algumas palavrinhas em inglês ao longo do caminho.
+
+**Como lidar com os erros que aparecem na tela?**
+
+Veja esse post que escrevi sobre [como lidar com erros de código](/posts/lidando-com-erros/)
+com algumas dicas.
 
 # Materiais para estudo e links interessantes
 

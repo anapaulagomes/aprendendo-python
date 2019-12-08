@@ -1,8 +1,9 @@
-baseurl = "http://example.org/"
+baseurl = "https://anapaulagomes.github.io/aprendendo-python/"
 languageCode = "pt-br"
 title = "Aprendendo Python"
 theme = "hugo-cards"
 paginate = 9
+publishDir = "docs"
 
 [params]
   builtBy = "bool"

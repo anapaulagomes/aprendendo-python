@@ -4,6 +4,3 @@
 [submodule "themes/--force"]
 	path = themes/--force
 	url = https://github.com/bul-ikana/hugo-cards
-[submodule "public"]
-	path = public
-	url = git@github.com:anapaulagomes/aprendendo-python.git

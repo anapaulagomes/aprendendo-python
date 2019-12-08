@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lidando com erros - Aprendendo Python</title>
+<meta name="description" content="Como lidar com os erros que aparecem na tela? Vamos ver essa listinha de coisas para fazer que possam ajudar:
+ Ler a mensagem de erro na tela Caso não entenda, pode copiar e colar no Google Tradutor  Um exemplo:
+Eu escrevi esse código e está dando erro:
+Código
+bebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados = None # vou decidir depois print(&#39;Bebidas por convidados:&#39;) print(bebidas/convidados) print(&#39;Comidas por convidados:&#39;) print(comidas/convidados)  Erro"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://anapaulagomes.github.io/aprendendo-python/posts/lidando-com-erros/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Como lidar com os erros que aparecem na tela? Vamos ver essa listinha de coisas para fazer que possam ajudar:
+ Ler a mensagem de erro na tela Caso não entenda, pode copiar e colar no Google Tradutor  Um exemplo:
+Eu escrevi esse código e está dando erro:
+Código
+bebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados = None # vou decidir depois print(&#39;Bebidas por convidados:&#39;) print(bebidas/convidados) print(&#39;Comidas por convidados:&#39;) print(comidas/convidados)  Erro" />
+<meta name="twitter:title" content="Lidando com erros - Aprendendo Python" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Lidando com erros - Aprendendo Python" property="og:title">
+<meta content="Como lidar com os erros que aparecem na tela? Vamos ver essa listinha de coisas para fazer que possam ajudar:
+ Ler a mensagem de erro na tela Caso não entenda, pode copiar e colar no Google Tradutor  Um exemplo:
+Eu escrevi esse código e está dando erro:
+Código
+bebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados = None # vou decidir depois print(&#39;Bebidas por convidados:&#39;) print(bebidas/convidados) print(&#39;Comidas por convidados:&#39;) print(comidas/convidados)  Erro" property="og:description">
+<meta property="og:url" content="https://anapaulagomes.github.io/aprendendo-python/posts/lidando-com-erros/" />
+<meta property="og:site_name" content="Aprendendo Python" />
+
+<meta property="article:published_time" content="2019-11-08 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Lidando com erros",
+    "genre": "",  
+    "url": "https:\/\/anapaulagomes.github.io\/aprendendo-python\/posts\/lidando-com-erros\/",
+    "datePublished": "2019-11-08 00:00:00 \x2b0000 UTC",
+    "description": "Como lidar com os erros que aparecem na tela? Vamos ver essa listinha de coisas para fazer que possam ajudar:\n Ler a mensagem de erro na tela Caso não entenda, pode copiar e colar no Google Tradutor  Um exemplo:\nEu escrevi esse código e está dando erro:\nCódigo\nbebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados = None # vou decidir depois print(\x27Bebidas por convidados:\x27) print(bebidas\/convidados) print(\x27Comidas por convidados:\x27) print(comidas\/convidados)  Erro",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/aprendendo-python/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://anapaulagomes.github.io/aprendendo-python/">Aprendendo Python</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/sobre/">Sobre</a></li>
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/regras/">Regras do Curso</a></li>
+        <li class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <b>Para Professores</b>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/">Planejamento</a></li>
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://github.com/anapaulagomes/aprendendo-python/issues">Tem sugestões?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Lidando com erros</h1>
+            <p class="post-meta"><time datetime='2019-11-08T00:00:00Z' itemprop="datePublished">November 8, 2019</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            
+
+<h1 id="como-lidar-com-os-erros-que-aparecem-na-tela">Como lidar com os erros que aparecem na tela?</h1>
+
+<hr />
+
+<p>Vamos ver essa listinha de coisas para fazer que possam ajudar:</p>
+
+<ol>
+<li>Ler a mensagem de erro na tela</li>
+<li>Caso não entenda, pode copiar e colar no <a href="translate.google.com">Google Tradutor</a></li>
+</ol>
+
+<p>Um exemplo:</p>
+
+<p>Eu escrevi esse código e está dando erro:</p>
+
+<p><em>Código</em></p>
+
+<pre><code class="language-python">bebidas = 5  # 5 garrafas de refrigerante
+comidas = 100  # 100 pasteis
+convidados = None  # vou decidir depois
+
+print('Bebidas por convidados:')
+print(bebidas/convidados)
+print('Comidas por convidados:')
+print(comidas/convidados)
+</code></pre>
+
+<p><em>Erro</em></p>
+
+<pre><code class="language-bash">Bebidas por convidados:
+Traceback (most recent call last):
+  File &quot;festa.py&quot;, line 6, in &lt;module&gt;
+    print(bebidas/convidados)
+TypeError: unsupported operand type(s) for /: 'int' and 'NoneType'
+</code></pre>
+
+<p>O erro mostra onde aconteceu o erro (o arquivo, a linha e o local):
+<code>File &quot;festa.py&quot;, line 6, in &lt;module&gt;</code>. Então você já pode ir lá
+no arquivo <code>festa.py</code> dar uma olhada na linha 6.</p>
+
+<p>Caso não consiga identificar o erro apenas olhando a linha,
+confira de onde vem as variáveis, métodos ou outras estruturas
+que você está usando. Nesse caso as variáveis <code>bebidas</code> e
+<code>convidados</code>.</p>
+
+<p>A mensagem de erro também te dá uma dica do que pode estar
+errado: <code>TypeError: unsupported operand type(s) for /: 'int' and 'NoneType'</code>.
+Vamos por partes:</p>
+
+<ul>
+<li><code>TypeError</code>: é uma exceção (um tipo de erro). Nesse caso, traduzindo
+ficaria <code>Erro de Tipo</code>. Então já sabemos que tem a ver com o tipo dos
+dados envolvidos.</li>
+<li><code>unsupported operand type(s) for /: 'int' and 'NoneType'</code>: aqui temos
+uma mensagem mais clara do que está acontecendo. A mensagem diz:
+<code>tipo(s) de operando não suportado para /: 'int' e 'NoneType'</code>. O que isso
+quer dizer? Quer dizer dizer que estamos usando tipos que não são
+suportados em uma divisão. Nesse caso a variável <code>bebidas</code> tem um
+dado do tipo inteiro (5) e <code>convidados</code> tem um tipo <code>None</code>. Não dá pra
+dividir <code>5/None</code>. Para corrigir esse erro, basta dar um valor válido para
+<code>convidados</code>.</li>
+</ul>
+
+<p>Se ainda não conseguir, abra o Google e copie a mensagem de erro. Vão
+aparecer muitas páginas com muitas pessoas relatando o mesmo problema e
+pedindo ajuda. Você também pode pedir ajuda nesses sites. Um site muito
+famoso entre a comunidade desenvolvedora é o <a href="https://pt.stackoverflow.com/">StackOverflow</a>
+(versão em português).</p>
+
+<p>Caso você tenha ficado preocupada(o) em ter que fazer isso toda vez,
+não se preocupe. Os erros se repetem e depois de um tempo você já
+estará fazendo tudo no automático.</p>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+                    <li><a class="next" href="https://anapaulagomes.github.io/aprendendo-python/posts/perguntas-frequentes-e-materiais-de-estudo/">&laquo; FAQ e materiais</a></li>
+              
+              
+                <li><a class="previous" href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+           
+            <img width="600" src="https://anapaulagomes.github.io/aprendendo-python/images/image-5.png" alt="Lidando com erros">
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/seu-bot-na-rua/">Aula 5: Seu bot na rua</a><small>&nbsp;&nbsp;November 13, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/conectando-com-o-mundo-via-apis/">Aula 4: APIs</a><small>&nbsp;&nbsp;November 12, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/hackeando-os-dados-da-prefeitura/">Aula 3: dados abertos</a><small>&nbsp;&nbsp;November 11, 2019</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://bool.netlify.com">bool</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="bool"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="http://github.com/anapaulagomes/aprendendo-python"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://anapaulagomes.github.io/aprendendo-python//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

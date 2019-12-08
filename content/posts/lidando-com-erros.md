@@ -7,6 +7,8 @@ date: "2019-11-08"
 
 # Como lidar com os erros que aparecem na tela?
 
+---
+
 Vamos ver essa listinha de coisas para fazer que possam ajudar:
 
 1. Ler a mensagem de erro na tela

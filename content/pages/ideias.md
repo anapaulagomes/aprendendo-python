@@ -13,12 +13,32 @@ title: Ideias de Projetos
 
 ### Aula 2: seu próprio bot
 
+| Ideia | Categoria         | Conhecimentos a serem exercitados  | Descrição  |
+| :---------: | :-------------: | :----- | :---- |
+| Lembrando o aniversário dos amigos | Bot no terminal | `loops`, `if/else`, `input`, `datetime` | Dado uma agenda com nome, telefone e aniversário de amigos o nosso bot deve dizer se é aniversário de alguém e mostrar uma mensagem na tela. |
+
 ### Aula 3: dados abertos
 
+Fontes de dados:
+
+* [Portal Brasileiro de Dados Abertos](http://dados.gov.br/)
+* [Portal da Transparência de Feira de Santana](http://www.transparencia.feiradesantana.ba.gov.br/)
+
+| Ideia | Categoria         | Conhecimentos a serem exercitados  | Descrição  |
+| :---------: | :-------------: | :----- | :---- |
+| Pagamentos da Prefeitura | Análise de dados | `loops`, `if/else`, `leitura de arquivos` |  |
+| Locação de imóveis pela Prefeitura | Análise de dados | `loops`, `if/else`, `leitura de arquivos` |  |
+| Pagamentos feitos pela prefeitura de Feira | Análise de dados | `loops`, `if/else`, `leitura de arquivos` |  |
+| Pagamentos feitos pela prefeitura de Feira | Análise de dados | `loops`, `if/else`, `leitura de arquivos` |  |
+
 ### Aula 4: APIs
+
+Conexão com diferentes APIs. Sugestões:
 
 * Vagalume
 * Twitter
 * Youtube
 
 ### Aula 5: Seu bot na rua
+
+Deploy do script ou aplicação em serviços de plataforma como serviços como o [PythonAnywhere](pythonanywhere.com).

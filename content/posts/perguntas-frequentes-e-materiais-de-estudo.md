@@ -7,6 +7,8 @@ date: "2019-11-08"
 
 # Perguntas Frequentes
 
+---
+
 **Eu preciso saber matemática pra ser uma pessoa programadora?**
 
 Não. Originalmente eu queria ser advogada e minha atenção estava

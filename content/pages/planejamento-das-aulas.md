@@ -21,7 +21,7 @@ Aqui uma proposta de agenda para as aulas:
 Projeto da aula: Adivinhando um número
 
 | Duração     | Tópico          | Conteúdo  |
-| :---------: | :-------------: | :----- |
+| :---------: | :------------- | :----- |
 | 00:00       | Apresentação  | Momento para conhecer os alunos e eles te conhecerem também |
 | 00:15       | Introdução aos computadores | O que é um computador, como tudo começou, o que é a internet, sistemas operacionais e programas de computador |
 | 00:30       | O terminal | Uso básico do terminal: como navegar entre diretórios, ver e criar arquivos, diretório atual |
@@ -30,53 +30,51 @@ Projeto da aula: Adivinhando um número
 | 01:45       | Listas e dicionários |  |
 | 02:15       | Estruturas de controle | `if/else` |
 | 02:45       | Laços | `for/while` |
-| 03:15       | Operadores matemáticos e entrada de dados | `+, -, *, //, /` e `input` |
+| 03:15       | Operadores matemáticos e entrada de dados | `+ - * /` e `input` |
 | 03:30       | Exercício | Sugestão: implementar os jogos: Adivinhando um número |
-| 04:00       | Recapitulando! | Uma revisão do que foi abordado com um jogo de perguntas e respostas. |
+| 04:00       | Recapitulando! | Uma revisão do que foi abordado. |
 
 ### Aula 2: Seu próprio bot
 
-Projeto da aula:
+Projeto da aula: Um bot para ajudar a memorizar coisas
 
 | Duração     | Tópico          | Conteúdo  |
-| :---------: | :-------------: | :----- |
+| :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior | Variáveis, tipos, estruturas de controle e laço, entrada de dados |
-| 00:15       |  |  |
-
-
-Aula 6 – Tuplas, Dicionários e Conjuntos
-Aula 7 – Funções e métodos
-Aula 8 – Argumentos de linha de comando
-Aula 9 – Orientação a objeto
-Aula 10 – Entrada e saída de arquivos
-Aula 11 – Tratamento de erros e exceções (TRY e EXCEPT)
+| 00:15       | Strings | Métodos úteis das strings como `replace`, `upper/lower/title`, `isdigit`, etc |
+| 00:15       | Funções e métodos | Como organizar o código de maneira modularizada |
+| 00:45       | Lidando com arquivos | Lendo e escrevendo em arquivos diferentes |
+| 01:45       | Lidando com erros    | introdução ao `try/except` |
 
 ### Aula 3: Dados Abertos
 
 Projeto da aula: hackeando dados da prefeitura de Feira de Santana
 
 | Duração     | Tópico          | Conteúdo  |
-| :---------: | :-------------: | :----- |
+| :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior |  |
 | 00:15       | O conceito de hacker |  |
 
 ### Aula 4: APIs
 
-Projeto da aula: 
+Projeto da aula: um bot para o Twitter
 
 | Duração     | Tópico          | Conteúdo  |
-| :---------: | :-------------: | :----- |
-| 00:00       | Revisão da aula anterior |  |
-| 00:15       |  |  |
+| :---------: | :------------- | :----- |
+| 00:00       | Revisão da aula anterior | O que vimos nos Dados Abertos? |
+| 00:15       | PIP e `requests` | Como utilizar o `pip` e a biblioteca `requests` |
+| 00:30       | Conectando a uma API | Conecta a API do Twitter |
 
 ### Aula 5: Seu bot na rua
 
 Projeto da aula: Deploy do bot criado pelos alunos no [PythonAnywhere](https://www.pythonanywhere.com/)
 
 | Duração     | Tópico          | Conteúdo  |
-| :---------: | :-------------: | :----- |
+| :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior |  |
-| 00:15       | I que é um deploy? |  |
+| 00:15       | O que é um deploy? | Introdução aos servidores |
+| 00:30       | PythonAnywhere | Configuração da conta no Python Anywhere |
 
+---
 
 Lembrando que essa agenda é só uma sugestão e pode ser modificada a qualquer momento.

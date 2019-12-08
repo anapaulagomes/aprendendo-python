@@ -21,4 +21,4 @@ desse curso foi usado em outros lugares. :)
 
 Achou legal? Quer contribuir? Trocar ideias?
 
-Diga oi no <a href="mailto:aprendendopython@anapaulagomes.me">aprendendopython@anapaulagomes.me</a>.
+Diga oi no <a href="mailto:apgomes88@gmail.com">apgomes88@gmail.com</a>.

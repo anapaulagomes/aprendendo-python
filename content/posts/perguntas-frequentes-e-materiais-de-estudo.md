@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FAQ e materiais
-img: image-5.png
+img: "faq.png"
 date: "2019-11-08"
 ---
 
@@ -48,7 +48,11 @@ com algumas dicas.
 
 # Materiais para estudo e links interessantes
 
+Todos os materiais abaixo são gratuitos.
+
+* [Documentação oficial do Python](https://docs.python.org/pt-br/3/)
 * [Python Básico](https://solyd.com.br/treinamentos/python-basico): curso online com exercícios e certificado
 * [Python para Zumbis](https://github.com/fmasanori/PPZ)
 * [Tutorial Django Girls](https://tutorial.djangogirls.org/pt/)
-* [Git e GitHub]()
+* [Git e GitHub](https://digitalinnovation.one/cursos/introducao-ao-github-e-comandos-essenciais-para-trabalhar-em-equipe?ref=certificate/1DCCBBE9)
+* [Khan Academy](https://pt.khanacademy.org/): cursos de computação e programação

@@ -7,7 +7,7 @@ publishDir = "docs"
 
 [params]
   builtBy = "bool"
-  defaultImage = "gopher.jpg"
+  defaultImage = "logo-circular.png"
 
   facebook = ""
   quora = ""

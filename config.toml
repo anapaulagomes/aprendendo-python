@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313/"
+baseurl = "https://anapaulagomes.github.io/aprendendo-python/"
 languageCode = "pt-br"
 title = "Aprendendo Python"
 theme = "hugo-cards"

@@ -11,7 +11,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 hugo
 
-git add .
+git add docs
 
 msg="Deploy em $(date)"
 if [ -n "$*" ]; then

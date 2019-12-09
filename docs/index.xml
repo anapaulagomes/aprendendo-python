@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aprendendo Python</title>
-    <link>http://localhost:1313/</link>
+    <link>https://anapaulagomes.github.io/aprendendo-python/</link>
     <description>Recent content on Aprendendo Python</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://anapaulagomes.github.io/aprendendo-python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aula 5: Seu bot na rua</title>
-      <link>http://localhost:1313/posts/seu-bot-na-rua/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/seu-bot-na-rua/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/seu-bot-na-rua/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/seu-bot-na-rua/</guid>
       <description>Hora de colocar o seu Bot na rua! Vamos aprender o que é deploy e como deixar o seu bot rodando no PythonAnywhere.</description>
     </item>
     
     <item>
       <title>Aula 4: APIs</title>
-      <link>http://localhost:1313/posts/conectando-com-o-mundo-via-apis/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/conectando-com-o-mundo-via-apis/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/conectando-com-o-mundo-via-apis/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/conectando-com-o-mundo-via-apis/</guid>
       <description>Em breve :)</description>
     </item>
     
     <item>
       <title>Aula 3: dados abertos</title>
-      <link>http://localhost:1313/posts/hackeando-os-dados-da-prefeitura/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/hackeando-os-dados-da-prefeitura/</link>
       <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/hackeando-os-dados-da-prefeitura/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/hackeando-os-dados-da-prefeitura/</guid>
       <description>Em breve :)</description>
     </item>
     
     <item>
       <title>Aula 2: seu próprio Bot</title>
-      <link>http://localhost:1313/posts/criando-seu-proprio-bot/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</link>
       <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/criando-seu-proprio-bot/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</guid>
       <description>Em breve :)</description>
     </item>
     
     <item>
       <title>Aula 1: Olá, mundo!</title>
-      <link>http://localhost:1313/posts/ola-mundo/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/ola-mundo/</link>
       <pubDate>Sat, 09 Nov 2019 10:51:47 +0530</pubDate>
       
-      <guid>http://localhost:1313/posts/ola-mundo/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/ola-mundo/</guid>
       <description>Introdução aos computadores, a linha de comando e conceitos básicos da linguagem de programação Python.
 Veja uma Introdução a Linha de Comando aqui.
 Olá, mundo Mostrando um &amp;ldquo;Olá, mundo&amp;rdquo; na tela foi como boa parte das pessoas programadoras começou. Chegou a sua vez!
@@ -61,20 +61,20 @@ print(&amp;quot;Olá, mundo!&amp;quot;)  Olá, mundo!  Repare que você teve que
     
     <item>
       <title>FAQ e materiais</title>
-      <link>http://localhost:1313/posts/perguntas-frequentes-e-materiais-de-estudo/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/perguntas-frequentes-e-materiais-de-estudo/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/perguntas-frequentes-e-materiais-de-estudo/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/perguntas-frequentes-e-materiais-de-estudo/</guid>
       <description>Perguntas Frequentes Eu preciso saber matemática pra ser uma pessoa programadora?
 Não. Originalmente eu queria ser advogada e minha atenção estava toda focada em história, geografia e português. Minhas notas em matemática e física eram as piores. Graças a vários acasos acabei parando na área de computação e, apesar de matemática ser a fundação de muitas coisas, você não precisa derivar ou implementar cálculos complexos em 90% dos casos (essa estatística foi 100% retirada da minha cabeça).</description>
     </item>
     
     <item>
       <title>Lidando com erros</title>
-      <link>http://localhost:1313/posts/lidando-com-erros/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/lidando-com-erros/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/lidando-com-erros/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/lidando-com-erros/</guid>
       <description>Como lidar com os erros que aparecem na tela? Vamos ver essa listinha de coisas para fazer que possam ajudar:
  Ler a mensagem de erro na tela Caso não entenda, pode copiar e colar no Google Tradutor  Um exemplo:
 Eu escrevi esse código e está dando erro:
@@ -84,38 +84,38 @@ bebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados 
     
     <item>
       <title>Ideias de Projetos</title>
-      <link>http://localhost:1313/pages/ideias/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/ideias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/ideias/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/ideias/</guid>
       <description>Aula 1: Olá, mundo!    Ideia Categoria Conhecimentos a serem exercitados Descrição     Adivinhando um número Jogo no terminal loops, if/else, input No início do jogo o jogador 1 deve inserir um número. O jogador 2 deve tentar adivinhar qual número foi digitado e o programa deve fornecer dicas se o número é maior ou menor que o digitado.   STOP Jogo no terminal dicionários, loops, if/else, input Implementação do jogo STOP, onde dado uma letra o jogador precisa responder perguntas começando com a letra sorteada.</description>
     </item>
     
     <item>
       <title>Planejamento das Aulas</title>
-      <link>http://localhost:1313/pages/planejamento-das-aulas/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/planejamento-das-aulas/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</guid>
       <description>Esse curso foi pensado para quem nunca programou na vida. Divido em 5 aulas, o curso tem duração total de 20 horas, podendo ser executadas de maneira independente (contanto que o básico, abordado na aula 1, seja coberto antes).
 Para que os alunos vejam o quão empolgante e as inúmeras possibilidades que programar traz, este curso busca ter um projeto por aula. Os projetos são bem definidos porém deixam espaço para que o aluno proponha ideias e aplique em áreas que o interessa mais.</description>
     </item>
     
     <item>
       <title>Regras do Curso</title>
-      <link>http://localhost:1313/pages/regras/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/regras/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</guid>
       <description>Não existe pergunta idiota Respeite a história e o ritmo de aprendizado das outras pessoas Tente se divertir enquanto aprende  Tem dúvidas? Veja o nosso Perguntas Frequentes.</description>
     </item>
     
     <item>
       <title>Sobre</title>
-      <link>http://localhost:1313/pages/sobre/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/sobre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/sobre/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/sobre/</guid>
       <description>Até hoje não houve nada que me deixasse tão maravilhada quanto o que é possível fazer com programação. E eu gostaria de passar esse &amp;ldquo;super poder&amp;rdquo; adiante. :)
 Esse curso de Python foi criado para introduzir pessoas que nunca programaram a programação e o objetivo é fazer com que esse processo seja o mais divertido possível.
 O curso é gratuito. Para colaborar abra um Pull Request ou deixe a sua issue no repositório Aprendendo Python.</description>

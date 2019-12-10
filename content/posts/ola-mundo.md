@@ -117,49 +117,13 @@ Agora é a sua vez. Crie uma ficha sobre você com as seguintes informações:
 
 Você deve utilizar variáveis e imprimir todas as informações na tela.
 
-# Listas
-
-E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos?
-Você poderia criar uma variável pra cada um.
-
-
-```
-seriado1 = "The Crown"
-seriado2 = "Bojack Horseman"
-seriado3 = "Explicando"
-
-```
-
-Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas
-estão separadas. Com o Python você pode criar suas próprias **listas**:
-
-
-```python
-seriados = ["The Crown", "Bojack Horseman", "Explicando"]
-print(seriados)
-```
-
-    ['The Crown', 'Bojack Horseman', 'Explicando']
-
-
-Você pode também criar listas combinando tipos diferentes:
-
-```
-notas = [10, 8.9, 7.5, 9.2]  # inteiros e decimais
-```
-
-### Exercício
-
-Crie listas com:
-
-* Coisas que você adora fazer em Feira de Santana
-* Coisas que você não gosta em Feira de Santana
-* O que você mais curte fazer na internet
+## Comentários
 
 PS.: a essa altura do campeonato você já deve ter notado umas **hashtags** rolando por aí.
-Elas são chamadas de **comentários**. O conteúdo delas será ignorado pelo Python e você
-pode escrever o que você quiser. É importante para documentar o que você está fazendo ou
-pontos que queira explicar para o seu eu do futuro ou para o seu time.
+Elas são chamadas de **comentários**.
+O conteúdo delas será ignorado pelo Python e você pode escrever o que você quiser.
+É importante para documentar o que você está fazendo ou pontos que queira explicar
+para o seu eu do futuro ou para o seu time.
 
 `# eu sou um comentário`
 
@@ -167,182 +131,13 @@ Comentários podem ter também múltiplas linhas:
 
 ```
 """
-Muitas
-Linhas
-Aqui
+Esse programa é um jogo de salada de frutas.
+Ele escolhe a letra automaticamente e conta os pontos no final
 """
 ```
 
-## Mais ação com listas
 
-Dá pra fazer bastante coisas com listas. Elas são uma estrutura de dados poderosa!
-
-Vamos ver como:
-
-* adicionar
-* remover
-* buscar
-* ordenar
-
-Elementos em uma lista!
-
-
-```python
-# primeiro, vamos ver o que tem nessa lista:
-
-print('--- O que tem na lista:')
-print(seriados)
-
-# adicionando itens a uma lista que já existe
-
-print('--- Novo item:')
-seriados.append('Irmandade')
-print(seriados)
-
-# acessando itens em uma lista
-
-print('--- Primeiro item da lista:')
-print(seriados[0])  # o primeiro item da lista - isso mesmo, Python começa a contar do zero!
-
-### Encontrando um item em uma lista
-
-print('--- Onde está The Crown?')
-onde_esta_esse_seriado = seriados.index('The Crown')  # O Python vai te dizer em que posição o que você busca está
-print(onde_esta_esse_seriado)
-print(seriados[onde_esta_esse_seriado])
-
-### Ordenando uma lista
-
-print('--- Seriados ordenados:')
-seriados = sorted(seriados)  # substituímos a lista desordenada pela ordenada
-print(seriados)
-
-### Deletando um item de uma lista
-
-print('--- Deletamos o primeiro e o último da lista')
-seriados.pop(0)  # deleta o primeiro da lista
-seriados.pop(0)  # deleta o útil da lista
-print(seriados)
-```
-
-    --- O que tem na lista:
-    ['The Crown', 'Bojack Horseman', 'Explicando']
-    --- Novo item:
-    ['The Crown', 'Bojack Horseman', 'Explicando', 'Irmandade']
-    --- Primeiro item da lista:
-    The Crown
-    --- Onde está The Crown?
-    0
-    The Crown
-    --- Seriados ordenados:
-    ['Bojack Horseman', 'Explicando', 'Irmandade', 'The Crown']
-    --- Deletamos o primeiro e o último da lista
-    ['Irmandade', 'The Crown']
-
-
-# Dicionários
-
-Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos
-melhores amigos. Como podemos fazer isso? Com listas?
-
-```
-amigos = ['Mateus', 'Ana', 'Lari']
-telefone_dos_amigos = [123456, 998765, 56742534]
-```
-
-Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes.
-E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.
-
-Para resolver esse problema onde precisamos de um identificador único para armazenar dados,
-podemos utilizar uma estrutura de dados chamada Dicionários.
-
-
-```python
-agenda = {
-    'Mateus': 123456,
-    'Ana': 998765,
-    'Lari': 5674253,
-}
-
-print(f"O telefone de Lari é: {agenda.get('Lari')}")
-
-# podemos mostrar também dessa forma
-print(f"O telefone de Lari é: {agenda['Lari']}")
-```
-
-    O telefone de Lari é: 5674253
-    O telefone de Lari é: 5674253
-
-
-
-```python
-print(f"O telefone de Mari é: {agenda['Mari']}")  # gera um erro porque Mari não está na agenda ainda :)
-```
-
-
-    ---------------------------------------------------------------------------
-
-    KeyError                                  Traceback (most recent call last)
-
-    <ipython-input-26-048e1b6587a7> in <module>
-    ----> 1 print(f"O telefone de Mari é: {agenda['Mari']}")
-    
-
-    KeyError: 'Mari'
-
-
-
-```python
-agenda['Mari'] = 6769798  # adicionamos o número de Mari
-
-print(agenda)
-```
-
-    {'Mateus': 123456, 'Ana': 998765, 'Lari': 5674253, 'Mari': 6769798}
-
-
-Os dicionários utilizam uma estrutura de **chave** e **valor**, onde a chave é o identificador único
-e o valor pode ser qualquer coisa: inclusive outro dicionário.
-
-O que acontece se você utilizar a mesma chave com valores diferentes?
-Consegue adivinha qual número será impresso na tela?
-
-
-```python
-agenda = {
-    'Mateus': 123456,
-    'Ana': 998765,
-    'Lari': 5674253,
-    'Mateus': 99900009999,  # mudou de número
-}
-
-# print(f"O telefone de Mateus é: {agenda.get('Mateus')}")
-```
-
-Nenhum erro será apontado pelo Python porque a linguagem entende que você pode atualizar os valores
-mais tarde. Tem que tomar cuidado para não fazer isso por acidente.
-
-Falando em atualizar, como podemos atualizar um número de alguém que você já tem na agenda?
-
-
-```python
-agenda['Ana'] = 112233
-agenda['Camila'] = 445566  # novo amigo na agenda
-
-agenda['ana'] = 89898989  # novo ou não?
-agenda
-```
-
-
-
-
-    {'Mateus': 99900009999,
-     'Ana': 112233,
-     'Lari': 5674253,
-     'Camila': 445566,
-     'ana': 89898989}
-
-
+## Input
 
 O potencial de programação vai muito além do que já vimos aqui.
 Uma das coisas mais legais é poder interagir com o mundo fora do código: com pessoas!
@@ -364,8 +159,147 @@ print(f'Você tem {idade} anos')
     Você tem 31 anos
 
 
+## Estruturas de controle
+
+Existem algumas ações que gostaríamos de controlar e tomamos decisões baseadas nos dados
+ou informações que temos. Já fazemos isso bastante no nosso dia a dia. Um exemplo disso
+é atravessar a rua. Você só atravessa uma rua quando sabe que é seguro o suficiente, sendo
+porquê o sinal está fechado ou quando não tem carros vindo. Seu cérebro organiza tudo para
+você:
+
+- para no passeio
+- vê se o sinal está fechado
+- o sinal está fechado?
+- SIM! Posso atravessar a rua
+- o sinal está fechado?
+- NÃO! Não posso atravessar a rua
+
+Na programação não é diferente. Temos estruturas chamadas **estruturas de controle**. Utilizamos as
+palavras-chave `if` (que significa "se") e `else` (que significa "senão") para controlar o que vamos fazer.
+
+Aproveitando o exemplo da idade, vamos verificar se uma pessoa pode votar ou não:
+
 
 ```python
+if idade >= 16:
+    print("Já pode votar! :)")
+else:
+    print("Não pode votar! :(")
 
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    <ipython-input-24-83d40b5203e4> in <module>
+    ----> 1 if idade >= 16:
+          2     print("Já pode votar! :)")
+          3 else:
+          4     print("Não pode votar! :(")
+
+
+    TypeError: '>=' not supported between instances of 'str' and 'int'
+
+
+Ops, encontramos um erro. A mensagem diz que não podemos dizer se uma _string_ (um texto)
+é menor que um número (16, nesse caso). Porquê? Porque `idade` foi digitada pelo usuário.
+Por padrão, o que vem do `input` é um texto. Temos que **converter** do tipo _string_ para
+um número inteiro.
+
+Em Python é bem fácil. Basta utilizar o nome do tipo para converter o dado.
+
+
+```python
+idade = int(idade)  # convertemos o tipo e já substituímos!
+
+if idade >= 16:
+    print("Já pode votar! :)")
+else:
+    print("Não pode votar! :(")
+
+```
+
+# Projeto da Aula: Salada de Frutas
+
+Nessa aula criamos um jogo chamado Salada de Frutas com Python.
+Esse jogo também é conhecido como STOP ou adedanha.
+
+Lembrando como o jogo funciona:
+
+* Sorteamos uma letra automaticamente
+* 
+
+**Atenção**: Nós deixamos a letra escolhida minúscula para comparar com
+
+
+
+```python
+import string
+import random
+
+
+print("Vamos jogar salada de frutas?")
+
+letra = random.choice(string.ascii_letters)
+letra = letra.lower()  # a função lower() deixa o texto em letras minúsculas
+
+print(f"A letra é... {letra}
+
+")
+
+nome = input("Nome: ")
+fruta = input("Fruta: ")
+cep = input("Cidade, Estado ou País: ")
+animal = input("Animal: ")
+minha_sogra_eh = input("Minha sogra é...")
+objeto = input("Objeto: ")
+cantor_ou_cantora = input("Cantor(a): ")
+ator_ou_atriz = input("Ator(a): ")
+novela = input("Novela: ")
+musica = input("Música: ")
+
+total = 0
+if nome != "" and nome.lower().startswith(letra):
+    total = total + 1
+if fruta != "" and fruta.lower().startswith(letra):
+    total = total + 1
+if cep != "" and cep.lower().startswith(letra):
+    total = total + 1
+if animal != "" and animal.lower().startswith(letra):
+    total = total + 1
+if minha_sogra_eh != "" and minha_sogra_eh.lower().startswith(letra):
+    total = total + 1
+if objeto != "" and objeto.lower().startswith(letra):
+    total = total + 1
+if cantor_ou_cantora != "" and cantor_ou_cantora.lower().startswith(letra):
+    total = total + 1
+if ator_ou_atriz != "" and ator_ou_atriz.lower().startswith(letra):
+    total = total + 1
+if novela != "" and novela.lower().startswith(letra):
+    total = total + 1
+if musica != "" and musica.lower().startswith(letra):
+    total = total + 1
+
+print(f'TOTAL: {total}')
+
+```
+
+    Vamos jogar salada de frutas?
+    A letra é... p
+    
+    
+    Nome: Paula
+    Fruta: 
+    Cidade, Estado ou País: 
+    Animal: 
+    Minha sogra é...
+    Objeto: 
+    Cantor(a): 
+    Ator(a): 
+    Novela: 
+    Música: 
+    TOTAL: 1
+
 

@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Aprendendo Python</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>https://anapaulagomes.github.io/aprendendo-python/pages/</link>
     <description>Recent content in Pages on Aprendendo Python</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
-	<atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://anapaulagomes.github.io/aprendendo-python/pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ideias de Projetos</title>
-      <link>http://localhost:1313/pages/ideias/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/ideias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/ideias/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/ideias/</guid>
       <description>Aula 1: Olá, mundo!    Ideia Categoria Conhecimentos a serem exercitados Descrição     Adivinhando um número Jogo no terminal loops, if/else, input No início do jogo o jogador 1 deve inserir um número. O jogador 2 deve tentar adivinhar qual número foi digitado e o programa deve fornecer dicas se o número é maior ou menor que o digitado.   Salada de frutas (STOP ou adedanha) Jogo no terminal dicionários, loops, if/else, input Implementação do jogo STOP, onde dado uma letra o jogador precisa responder perguntas começando com a letra sorteada.</description>
     </item>
     
     <item>
       <title>Planejamento das Aulas</title>
-      <link>http://localhost:1313/pages/planejamento-das-aulas/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/planejamento-das-aulas/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</guid>
       <description>Esse curso foi pensado para quem nunca programou na vida. Divido em 5 aulas, o curso tem duração total de 20 horas, podendo ser executadas de maneira independente (contanto que o básico, abordado na aula 1, seja coberto antes).
 Para que os alunos vejam o quão empolgante e as inúmeras possibilidades que programar traz, este curso busca ter um projeto por aula. Os projetos são bem definidos porém deixam espaço para que o aluno proponha ideias e aplique em áreas que o interessa mais.</description>
     </item>
     
     <item>
       <title>Regras do Curso</title>
-      <link>http://localhost:1313/pages/regras/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/regras/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</guid>
       <description>Não existe pergunta idiota Respeite a história e o ritmo de aprendizado das outras pessoas Tente se divertir enquanto aprende  Tem dúvidas? Veja o nosso Perguntas Frequentes.</description>
     </item>
     
     <item>
       <title>Sobre</title>
-      <link>http://localhost:1313/pages/sobre/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/sobre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/sobre/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/sobre/</guid>
       <description>Até hoje não houve nada que me deixasse tão maravilhada quanto o que é possível fazer com programação. E eu gostaria de passar esse &amp;ldquo;super poder&amp;rdquo; adiante. :)
 Esse curso de Python foi criado para introduzir pessoas que nunca programaram a programação e o objetivo é fazer com que esse processo seja o mais divertido possível.
 O curso é gratuito. Para colaborar abra um Pull Request ou deixe a sua issue no repositório Aprendendo Python.</description>

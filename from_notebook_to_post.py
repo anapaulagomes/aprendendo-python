@@ -18,6 +18,10 @@ for file_ in os.listdir(posts_dir):
             notebook_name = found.groups()[0]
             notebook_path = f'{notebooks_dir}{notebook_name}'
             print(f'>> {file_} {notebook_name}')
-            (body, _) = exporter.from_filename(notebook_path)
-            replaced_content = re.sub(found.group(), body, content)
-            open(f'{file_path}', 'w').write(replaced_content)
+            try:
+                (body, _) = exporter.from_filename(notebook_path)
+            except FileNotFoundError:
+                pass
+            else:
+                replaced_content = re.sub(found.group(), body, content)
+                open(f'{file_path}', 'w').write(replaced_content)

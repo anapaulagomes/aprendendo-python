@@ -363,10 +363,15 @@ Esse jogo também é conhecido como STOP ou adedanha.</p>
 
 <ul>
 <li>Sorteamos uma letra automaticamente</li>
-<li></li>
+<li>Recebemos do jogador as colunas (nome, fruta, etc)</li>
+<li>Verificamos se a pessoa preencheu tudo e se o valor preenchido começa com a letra sorteada</li>
+<li>Somamos 1 ponto para cada coluna preenchida corretamente</li>
+<li>Mostramos o total no final</li>
 </ul>
 
-<p><strong>Atenção</strong>: Nós deixamos a letra escolhida minúscula para comparar com</p>
+<p><strong>Atenção</strong>: Nós deixamos a letra escolhida minúscula porque o Python
+diferencia minúsculas e maiúsculas. Caso ele sorteasse T e você digitasse
+o nome &ldquo;thiago&rdquo;, o programa iria entender como coisas diferentes.</p>
 
 <pre><code class="language-python">import string
 import random
@@ -419,20 +424,20 @@ print(f'TOTAL: {total}')
 </code></pre>
 
 <pre><code>Vamos jogar salada de frutas?
-A letra é... p
+A letra é... l
 
 
-Nome: Paula
-Fruta: 
-Cidade, Estado ou País: 
-Animal: 
-Minha sogra é...
-Objeto: 
-Cantor(a): 
-Ator(a): 
+Nome: Livia
+Fruta: Limão
+Cidade, Estado ou País: Liverpool
+Animal: Leão
+Minha sogra é...Legal
+Objeto: Livro
+Cantor(a): Leonardo
+Ator(a): Leandra Leal
 Novela: 
-Música: 
-TOTAL: 1
+Música: Leãozinho
+TOTAL: 9
 </code></pre>
 
           </div>

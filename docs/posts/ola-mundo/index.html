@@ -257,212 +257,25 @@ print(type(eh_estudante))
 
 <p>Você deve utilizar variáveis e imprimir todas as informações na tela.</p>
 
-<h1 id="listas">Listas</h1>
-
-<p>E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos?
-Você poderia criar uma variável pra cada um.</p>
-
-<pre><code>seriado1 = &quot;The Crown&quot;
-seriado2 = &quot;Bojack Horseman&quot;
-seriado3 = &quot;Explicando&quot;
-
-</code></pre>
-
-<p>Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas
-estão separadas. Com o Python você pode criar suas próprias <strong>listas</strong>:</p>
-
-<pre><code class="language-python">seriados = [&quot;The Crown&quot;, &quot;Bojack Horseman&quot;, &quot;Explicando&quot;]
-print(seriados)
-</code></pre>
-
-<pre><code>['The Crown', 'Bojack Horseman', 'Explicando']
-</code></pre>
-
-<p>Você pode também criar listas combinando tipos diferentes:</p>
-
-<pre><code>notas = [10, 8.9, 7.5, 9.2]  # inteiros e decimais
-</code></pre>
-
-<h3 id="exercício-1">Exercício</h3>
-
-<p>Crie listas com:</p>
-
-<ul>
-<li>Coisas que você adora fazer em Feira de Santana</li>
-<li>Coisas que você não gosta em Feira de Santana</li>
-<li>O que você mais curte fazer na internet</li>
-</ul>
+<h2 id="comentários">Comentários</h2>
 
 <p>PS.: a essa altura do campeonato você já deve ter notado umas <strong>hashtags</strong> rolando por aí.
-Elas são chamadas de <strong>comentários</strong>. O conteúdo delas será ignorado pelo Python e você
-pode escrever o que você quiser. É importante para documentar o que você está fazendo ou
-pontos que queira explicar para o seu eu do futuro ou para o seu time.</p>
+Elas são chamadas de <strong>comentários</strong>.
+O conteúdo delas será ignorado pelo Python e você pode escrever o que você quiser.
+É importante para documentar o que você está fazendo ou pontos que queira explicar
+para o seu eu do futuro ou para o seu time.</p>
 
 <p><code># eu sou um comentário</code></p>
 
 <p>Comentários podem ter também múltiplas linhas:</p>
 
 <pre><code>&quot;&quot;&quot;
-Muitas
-Linhas
-Aqui
+Esse programa é um jogo de salada de frutas.
+Ele escolhe a letra automaticamente e conta os pontos no final
 &quot;&quot;&quot;
 </code></pre>
 
-<h2 id="mais-ação-com-listas">Mais ação com listas</h2>
-
-<p>Dá pra fazer bastante coisas com listas. Elas são uma estrutura de dados poderosa!</p>
-
-<p>Vamos ver como:</p>
-
-<ul>
-<li>adicionar</li>
-<li>remover</li>
-<li>buscar</li>
-<li>ordenar</li>
-</ul>
-
-<p>Elementos em uma lista!</p>
-
-<pre><code class="language-python"># primeiro, vamos ver o que tem nessa lista:
-
-print('--- O que tem na lista:')
-print(seriados)
-
-# adicionando itens a uma lista que já existe
-
-print('--- Novo item:')
-seriados.append('Irmandade')
-print(seriados)
-
-# acessando itens em uma lista
-
-print('--- Primeiro item da lista:')
-print(seriados[0])  # o primeiro item da lista - isso mesmo, Python começa a contar do zero!
-
-### Encontrando um item em uma lista
-
-print('--- Onde está The Crown?')
-onde_esta_esse_seriado = seriados.index('The Crown')  # O Python vai te dizer em que posição o que você busca está
-print(onde_esta_esse_seriado)
-print(seriados[onde_esta_esse_seriado])
-
-### Ordenando uma lista
-
-print('--- Seriados ordenados:')
-seriados = sorted(seriados)  # substituímos a lista desordenada pela ordenada
-print(seriados)
-
-### Deletando um item de uma lista
-
-print('--- Deletamos o primeiro e o último da lista')
-seriados.pop(0)  # deleta o primeiro da lista
-seriados.pop(0)  # deleta o útil da lista
-print(seriados)
-</code></pre>
-
-<pre><code>--- O que tem na lista:
-['The Crown', 'Bojack Horseman', 'Explicando']
---- Novo item:
-['The Crown', 'Bojack Horseman', 'Explicando', 'Irmandade']
---- Primeiro item da lista:
-The Crown
---- Onde está The Crown?
-0
-The Crown
---- Seriados ordenados:
-['Bojack Horseman', 'Explicando', 'Irmandade', 'The Crown']
---- Deletamos o primeiro e o último da lista
-['Irmandade', 'The Crown']
-</code></pre>
-
-<h1 id="dicionários">Dicionários</h1>
-
-<p>Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos
-melhores amigos. Como podemos fazer isso? Com listas?</p>
-
-<pre><code>amigos = ['Mateus', 'Ana', 'Lari']
-telefone_dos_amigos = [123456, 998765, 56742534]
-</code></pre>
-
-<p>Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes.
-E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.</p>
-
-<p>Para resolver esse problema onde precisamos de um identificador único para armazenar dados,
-podemos utilizar uma estrutura de dados chamada Dicionários.</p>
-
-<pre><code class="language-python">agenda = {
-    'Mateus': 123456,
-    'Ana': 998765,
-    'Lari': 5674253,
-}
-
-print(f&quot;O telefone de Lari é: {agenda.get('Lari')}&quot;)
-
-# podemos mostrar também dessa forma
-print(f&quot;O telefone de Lari é: {agenda['Lari']}&quot;)
-</code></pre>
-
-<pre><code>O telefone de Lari é: 5674253
-O telefone de Lari é: 5674253
-</code></pre>
-
-<pre><code class="language-python">print(f&quot;O telefone de Mari é: {agenda['Mari']}&quot;)  # gera um erro porque Mari não está na agenda ainda :)
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
-
-KeyError                                  Traceback (most recent call last)
-
-&lt;ipython-input-26-048e1b6587a7&gt; in &lt;module&gt;
-----&gt; 1 print(f&quot;O telefone de Mari é: {agenda['Mari']}&quot;)
-
-
-KeyError: 'Mari'
-</code></pre>
-
-<pre><code class="language-python">agenda['Mari'] = 6769798  # adicionamos o número de Mari
-
-print(agenda)
-</code></pre>
-
-<pre><code>{'Mateus': 123456, 'Ana': 998765, 'Lari': 5674253, 'Mari': 6769798}
-</code></pre>
-
-<p>Os dicionários utilizam uma estrutura de <strong>chave</strong> e <strong>valor</strong>, onde a chave é o identificador único
-e o valor pode ser qualquer coisa: inclusive outro dicionário.</p>
-
-<p>O que acontece se você utilizar a mesma chave com valores diferentes?
-Consegue adivinha qual número será impresso na tela?</p>
-
-<pre><code class="language-python">agenda = {
-    'Mateus': 123456,
-    'Ana': 998765,
-    'Lari': 5674253,
-    'Mateus': 99900009999,  # mudou de número
-}
-
-# print(f&quot;O telefone de Mateus é: {agenda.get('Mateus')}&quot;)
-</code></pre>
-
-<p>Nenhum erro será apontado pelo Python porque a linguagem entende que você pode atualizar os valores
-mais tarde. Tem que tomar cuidado para não fazer isso por acidente.</p>
-
-<p>Falando em atualizar, como podemos atualizar um número de alguém que você já tem na agenda?</p>
-
-<pre><code class="language-python">agenda['Ana'] = 112233
-agenda['Camila'] = 445566  # novo amigo na agenda
-
-agenda['ana'] = 89898989  # novo ou não?
-agenda
-</code></pre>
-
-<pre><code>{'Mateus': 99900009999,
- 'Ana': 112233,
- 'Lari': 5674253,
- 'Camila': 445566,
- 'ana': 89898989}
-</code></pre>
+<h2 id="input">Input</h2>
 
 <p>O potencial de programação vai muito além do que já vimos aqui.
 Uma das coisas mais legais é poder interagir com o mundo fora do código: com pessoas!</p>
@@ -482,7 +295,144 @@ print(f'Você tem {idade} anos')
 Você tem 31 anos
 </code></pre>
 
-<pre><code class="language-python">
+<h2 id="estruturas-de-controle">Estruturas de controle</h2>
+
+<p>Existem algumas ações que gostaríamos de controlar e tomamos decisões baseadas nos dados
+ou informações que temos. Já fazemos isso bastante no nosso dia a dia. Um exemplo disso
+é atravessar a rua. Você só atravessa uma rua quando sabe que é seguro o suficiente, sendo
+porquê o sinal está fechado ou quando não tem carros vindo. Seu cérebro organiza tudo para
+você:</p>
+
+<ul>
+<li>para no passeio</li>
+<li>vê se o sinal está fechado</li>
+<li>o sinal está fechado?</li>
+<li>SIM! Posso atravessar a rua</li>
+<li>o sinal está fechado?</li>
+<li>NÃO! Não posso atravessar a rua</li>
+</ul>
+
+<p>Na programação não é diferente. Temos estruturas chamadas <strong>estruturas de controle</strong>. Utilizamos as
+palavras-chave <code>if</code> (que significa &ldquo;se&rdquo;) e <code>else</code> (que significa &ldquo;senão&rdquo;) para controlar o que vamos fazer.</p>
+
+<p>Aproveitando o exemplo da idade, vamos verificar se uma pessoa pode votar ou não:</p>
+
+<pre><code class="language-python">if idade &gt;= 16:
+    print(&quot;Já pode votar! :)&quot;)
+else:
+    print(&quot;Não pode votar! :(&quot;)
+
+</code></pre>
+
+<pre><code>---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-24-83d40b5203e4&gt; in &lt;module&gt;
+----&gt; 1 if idade &gt;= 16:
+      2     print(&quot;Já pode votar! :)&quot;)
+      3 else:
+      4     print(&quot;Não pode votar! :(&quot;)
+
+
+TypeError: '&gt;=' not supported between instances of 'str' and 'int'
+</code></pre>
+
+<p>Ops, encontramos um erro. A mensagem diz que não podemos dizer se uma <em>string</em> (um texto)
+é menor que um número (16, nesse caso). Porquê? Porque <code>idade</code> foi digitada pelo usuário.
+Por padrão, o que vem do <code>input</code> é um texto. Temos que <strong>converter</strong> do tipo <em>string</em> para
+um número inteiro.</p>
+
+<p>Em Python é bem fácil. Basta utilizar o nome do tipo para converter o dado.</p>
+
+<pre><code class="language-python">idade = int(idade)  # convertemos o tipo e já substituímos!
+
+if idade &gt;= 16:
+    print(&quot;Já pode votar! :)&quot;)
+else:
+    print(&quot;Não pode votar! :(&quot;)
+
+</code></pre>
+
+<h1 id="projeto-da-aula-salada-de-frutas">Projeto da Aula: Salada de Frutas</h1>
+
+<p>Nessa aula criamos um jogo chamado Salada de Frutas com Python.
+Esse jogo também é conhecido como STOP ou adedanha.</p>
+
+<p>Lembrando como o jogo funciona:</p>
+
+<ul>
+<li>Sorteamos uma letra automaticamente</li>
+<li></li>
+</ul>
+
+<p><strong>Atenção</strong>: Nós deixamos a letra escolhida minúscula para comparar com</p>
+
+<pre><code class="language-python">import string
+import random
+
+
+print(&quot;Vamos jogar salada de frutas?&quot;)
+
+letra = random.choice(string.ascii_letters)
+letra = letra.lower()  # a função lower() deixa o texto em letras minúsculas
+
+print(f&quot;A letra é... {letra}
+
+&quot;)
+
+nome = input(&quot;Nome: &quot;)
+fruta = input(&quot;Fruta: &quot;)
+cep = input(&quot;Cidade, Estado ou País: &quot;)
+animal = input(&quot;Animal: &quot;)
+minha_sogra_eh = input(&quot;Minha sogra é...&quot;)
+objeto = input(&quot;Objeto: &quot;)
+cantor_ou_cantora = input(&quot;Cantor(a): &quot;)
+ator_ou_atriz = input(&quot;Ator(a): &quot;)
+novela = input(&quot;Novela: &quot;)
+musica = input(&quot;Música: &quot;)
+
+total = 0
+if nome != &quot;&quot; and nome.lower().startswith(letra):
+    total = total + 1
+if fruta != &quot;&quot; and fruta.lower().startswith(letra):
+    total = total + 1
+if cep != &quot;&quot; and cep.lower().startswith(letra):
+    total = total + 1
+if animal != &quot;&quot; and animal.lower().startswith(letra):
+    total = total + 1
+if minha_sogra_eh != &quot;&quot; and minha_sogra_eh.lower().startswith(letra):
+    total = total + 1
+if objeto != &quot;&quot; and objeto.lower().startswith(letra):
+    total = total + 1
+if cantor_ou_cantora != &quot;&quot; and cantor_ou_cantora.lower().startswith(letra):
+    total = total + 1
+if ator_ou_atriz != &quot;&quot; and ator_ou_atriz.lower().startswith(letra):
+    total = total + 1
+if novela != &quot;&quot; and novela.lower().startswith(letra):
+    total = total + 1
+if musica != &quot;&quot; and musica.lower().startswith(letra):
+    total = total + 1
+
+print(f'TOTAL: {total}')
+
+</code></pre>
+
+<pre><code>Vamos jogar salada de frutas?
+A letra é... p
+
+
+Nome: Paula
+Fruta: 
+Cidade, Estado ou País: 
+Animal: 
+Minha sogra é...
+Objeto: 
+Cantor(a): 
+Ator(a): 
+Novela: 
+Música: 
+TOTAL: 1
 </code></pre>
 
           </div>

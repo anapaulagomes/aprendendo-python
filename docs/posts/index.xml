@@ -6,10 +6,32 @@
     <description>Recent content in Posts on Aprendendo Python</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 09 Nov 2019 10:51:47 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://anapaulagomes.github.io/aprendendo-python/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aula 3: dados abertos</title>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/hackeando-os-dados-da-prefeitura/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/hackeando-os-dados-da-prefeitura/</guid>
+      <description>Dicionários Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos melhores amigos. Como podemos fazer isso? Com listas?
+amigos = [&#39;Mateus&#39;, &#39;Ana&#39;, &#39;Lari&#39;] telefone_dos_amigos = [123456, 998765, 56742534]  Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes. E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.
+Para resolver esse problema onde precisamos de um identificador único para armazenar dados, podemos utilizar uma estrutura de dados chamada Dicionários.</description>
+    </item>
+    
+    <item>
+      <title>Aula 2: seu próprio Bot</title>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</guid>
+      <description>Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.
+seriado1 = &amp;quot;The Crown&amp;quot; seriado2 = &amp;quot;Bojack Horseman&amp;quot; seriado3 = &amp;quot;Explicando&amp;quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:
+seriados = [&amp;quot;The Crown&amp;quot;, &amp;quot;Bojack Horseman&amp;quot;, &amp;quot;Explicando&amp;quot;] print(seriados)  [&#39;The Crown&#39;, &#39;Bojack Horseman&#39;, &#39;Explicando&#39;]  Você pode também criar listas combinando tipos diferentes:</description>
+    </item>
     
     <item>
       <title>Aula 1: Olá, mundo!</title>

@@ -27,12 +27,8 @@ Projeto da aula: Adivinhando um número
 | 00:30       | O terminal | Uso básico do terminal: como navegar entre diretórios, ver e criar arquivos, diretório atual |
 | 01:00       | Olá, mundo! | Hora de criar um arquivo Python e rodar o famoso "Olá, mundo!" |
 | 01:15       | REPL, Variáveis e tipos de dados | Strings, inteiros, float |
-| 01:45       | Listas e dicionários |  |
+| 03:15       | Entrada de dados | `input` |
 | 02:15       | Estruturas de controle | `if/else` |
-| 02:45       | Laços | `for/while` |
-| 03:15       | Operadores matemáticos e entrada de dados | `+ - * /` e `input` |
-| 03:30       | Exercício | Sugestão: implementar os jogos: Adivinhando um número |
-| 04:00       | Recapitulando! | Uma revisão do que foi abordado. |
 
 ### Aula 2: Seu próprio bot
 
@@ -41,10 +37,12 @@ Projeto da aula: Um bot para ajudar a memorizar coisas
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior | Variáveis, tipos, estruturas de controle e laço, entrada de dados |
-| 00:15       | Strings | Métodos úteis das strings como `replace`, `upper/lower/title`, `isdigit`, etc |
-| 00:15       | Funções e métodos | Como organizar o código de maneira modularizada |
-| 00:45       | Lidando com arquivos | Lendo e escrevendo em arquivos diferentes |
-| 01:45       | Lidando com erros    | introdução ao `try/except` |
+| 03:30       | Exercício de revisão |  |
+| 03:15       | Operadores matemáticos | `+ - * /` |
+| 01:45       | Listas |  |
+| 03:30       | Exercício | Pedra, papel e tesoura |
+| 02:45       | Laços | `for/while` |
+| 03:30       | Exercício | Sugestão: implementar os jogos: Adivinhando um número |
 
 ### Aula 3: Dados Abertos
 
@@ -53,7 +51,11 @@ Projeto da aula: hackeando dados da prefeitura de Feira de Santana
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior |  |
+| 00:00       | Dicionários |  |
 | 00:15       | O conceito de hacker |  |
+| 00:15       | Strings | Métodos úteis das strings como `replace`, `upper/lower/title`, `isdigit`, etc |
+| 00:45       | Lidando com arquivos | Lendo e escrevendo em arquivos diferentes |
+| 01:45       | Lidando com erros    | introdução ao `try/except` |
 
 ### Aula 4: APIs
 
@@ -62,6 +64,7 @@ Projeto da aula: um bot para o Twitter
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |
 | 00:00       | Revisão da aula anterior | O que vimos nos Dados Abertos? |
+| 00:15       | Funções e métodos | Como organizar o código de maneira modularizada |
 | 00:15       | PIP e `requests` | Como utilizar o `pip` e a biblioteca `requests` |
 | 00:30       | Conectando a uma API | Conecta a API do Twitter |
 

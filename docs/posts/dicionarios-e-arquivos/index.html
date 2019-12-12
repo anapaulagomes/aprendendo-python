@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aula 3: Dicionários e Arquivos - Aprendendo Python</title>
+<meta name="description" content="Dicionários Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos melhores amigos. Como podemos fazer isso? Com listas?
+amigos = [&#39;Mateus&#39;, &#39;Ana&#39;, &#39;Lari&#39;] telefone_dos_amigos = [123456, 998765, 56742534]  Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes. E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.
+Para resolver esse problema onde precisamos de um identificador único para armazenar dados, podemos utilizar uma estrutura de dados chamada Dicionários."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Dicionários Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos melhores amigos. Como podemos fazer isso? Com listas?
+amigos = [&#39;Mateus&#39;, &#39;Ana&#39;, &#39;Lari&#39;] telefone_dos_amigos = [123456, 998765, 56742534]  Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes. E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.
+Para resolver esse problema onde precisamos de um identificador único para armazenar dados, podemos utilizar uma estrutura de dados chamada Dicionários." />
+<meta name="twitter:title" content="Aula 3: Dicionários e Arquivos - Aprendendo Python" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Aula 3: Dicionários e Arquivos - Aprendendo Python" property="og:title">
+<meta content="Dicionários Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos melhores amigos. Como podemos fazer isso? Com listas?
+amigos = [&#39;Mateus&#39;, &#39;Ana&#39;, &#39;Lari&#39;] telefone_dos_amigos = [123456, 998765, 56742534]  Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes. E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.
+Para resolver esse problema onde precisamos de um identificador único para armazenar dados, podemos utilizar uma estrutura de dados chamada Dicionários." property="og:description">
+<meta property="og:url" content="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/" />
+<meta property="og:site_name" content="Aprendendo Python" />
+
+<meta property="article:published_time" content="2019-12-11 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Aula 3: Dicionários e Arquivos",
+    "genre": "",  
+    "url": "https:\/\/anapaulagomes.github.io\/aprendendo-python\/posts\/dicionarios-e-arquivos\/",
+    "datePublished": "2019-12-11 00:00:00 \x2b0000 UTC",
+    "description": "Dicionários Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos melhores amigos. Como podemos fazer isso? Com listas?\namigos = [\x27Mateus\x27, \x27Ana\x27, \x27Lari\x27] telefone_dos_amigos = [123456, 998765, 56742534]  Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes. E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.\nPara resolver esse problema onde precisamos de um identificador único para armazenar dados, podemos utilizar uma estrutura de dados chamada Dicionários.",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/aprendendo-python/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://anapaulagomes.github.io/aprendendo-python/">Aprendendo Python</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/sobre/">Sobre</a></li>
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/regras/">Regras do Curso</a></li>
+        <li class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <b>Para Professores</b>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/">Planejamento</a></li>
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://github.com/anapaulagomes/aprendendo-python/issues">Tem sugestões?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Aula 3: Dicionários e Arquivos</h1>
+            <p class="post-meta"><time datetime='2019-12-11T00:00:00Z' itemprop="datePublished">December 11, 2019</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            
+
+<h2 id="dicionários">Dicionários</h2>
+
+<p>Agora que já sabemos o que são listas podemos criar uma agenda telefônica, com o número dos nossos
+melhores amigos. Como podemos fazer isso? Com listas?</p>
+
+<pre><code>amigos = ['Mateus', 'Ana', 'Lari']
+telefone_dos_amigos = [123456, 998765, 56742534]
+</code></pre>
+
+<p>Até poderíamos fazer mas teríamos que mudar as duas listas juntas todas as vezes.
+E se errarmos a posição dos números? Essa agenda telefônica não seria muito confiável.</p>
+
+<p>Para resolver esse problema onde precisamos de um identificador único para armazenar dados,
+podemos utilizar uma estrutura de dados chamada Dicionários.</p>
+
+<pre><code class="language-python">agenda = {
+    'Mateus': 123456,
+    'Ana': 998765,
+    'Lari': 5674253,
+}
+
+print(f&quot;O telefone de Lari é: {agenda.get('Lari')}&quot;)
+
+# podemos mostrar também dessa forma
+print(f&quot;O telefone de Lari é: {agenda['Lari']}&quot;)
+</code></pre>
+
+<pre><code>O telefone de Lari é: 5674253
+O telefone de Lari é: 5674253
+</code></pre>
+
+<pre><code class="language-python">print(f&quot;O telefone de Mari é: {agenda['Mari']}&quot;)  # gera um erro porque Mari não está na agenda ainda :)
+</code></pre>
+
+<pre><code>---------------------------------------------------------------------------
+
+KeyError                                  Traceback (most recent call last)
+
+&lt;ipython-input-2-aff0053c66a1&gt; in &lt;module&gt;
+----&gt; 1 print(f&quot;O telefone de Mari é: {agenda['Mari']}&quot;)  # gera um erro porque Mari não está na agenda ainda :)
+
+
+KeyError: 'Mari'
+</code></pre>
+
+<pre><code class="language-python">agenda['Mari'] = 6769798  # adicionamos o número de Mari
+
+print(agenda)
+</code></pre>
+
+<p>Os dicionários utilizam uma estrutura de <strong>chave</strong> e <strong>valor</strong>, onde a chave é o identificador único
+e o valor pode ser qualquer coisa: inclusive outro dicionário.</p>
+
+<p>O que acontece se você utilizar a mesma chave com valores diferentes?
+Consegue adivinha qual número será impresso na tela?</p>
+
+<pre><code class="language-python">agenda = {
+    'Mateus': 123456,
+    'Ana': 998765,
+    'Lari': 5674253,
+    'Mateus': 99900009999,  # mudou de número
+}
+
+# print(f&quot;O telefone de Mateus é: {agenda.get('Mateus')}&quot;)
+</code></pre>
+
+<p>Nenhum erro será apontado pelo Python porque a linguagem entende que você pode atualizar os valores
+mais tarde. Tem que tomar cuidado para não fazer isso por acidente.</p>
+
+<p>Falando em atualizar, como podemos atualizar um número de alguém que você já tem na agenda?</p>
+
+<h3 id="exercício">Exercício</h3>
+
+<p>Você já sabe como receber dados de um usuário com <code>input</code>. Que tal
+combinar seu conhecimento sobre listas e dicionários e criar uma agenda que adiciona
+nomes e telefones de alguém?</p>
+
+<h2 id="lidando-com-arquivos">Lidando com Arquivos</h2>
+
+<p>Escrever e ler arquivos é uma das coisas mais legais que podemos fazer com programação.
+Com eles você pode salvar dados e adicionar informações ao seu programa.</p>
+
+<pre><code class="language-python"># criando um novo arquivo
+
+meu_arquivo = open('novo-arquivo.txt', 'w')  # esse w indica que o arquivo é &quot;writable&quot; (pode ter algo escrito, em português)
+meu_arquivo.write('olha aqui o que eu criei')
+meu_arquivo.close()
+</code></pre>
+
+<pre><code class="language-python"># atualizando um arquivo que já existe
+
+meu_arquivo = open('novo-arquivo.txt', 'a')  # esse a indica que o arquivo é &quot;appendable&quot; (pode ser adicionado, em português)
+meu_arquivo.write('\nessa deve ser a segunda linha')
+meu_arquivo.close()
+</code></pre>
+
+<pre><code class="language-python"># abrindo um arquivo somente para leitura
+
+meu_arquivo = open('novo-arquivo.txt', 'r')  # esse r significa &quot;readable&quot; (de legível)
+# ou
+meu_arquivo = open('novo-arquivo.txt')  # o r fica implícito
+meu_arquivo.write('\nessa deve ser a segunda linha')  # dá erro
+meu_arquivo.close()
+
+</code></pre>
+
+<pre><code>---------------------------------------------------------------------------
+
+UnsupportedOperation                      Traceback (most recent call last)
+
+&lt;ipython-input-5-c77ce516307f&gt; in &lt;module&gt;
+      4 # ou
+      5 meu_arquivo = open('novo-arquivo.txt')  # o r fica implícito
+----&gt; 6 meu_arquivo.write('\nessa deve ser a segunda linha')
+      7 meu_arquivo.close()
+
+
+UnsupportedOperation: not writable
+</code></pre>
+
+<pre><code class="language-python">meu_arquivo = open('novo-arquivo.txt')
+meu_arquivo.read()  # mostra o conteúdo
+</code></pre>
+
+<pre><code>'olha aqui o que eu criei\nessa deve ser a segunda linha'
+</code></pre>
+
+<pre><code class="language-python">meu_arquivo = open('novo-arquivo.txt')
+meu_arquivo.readlines()  # te devolve uma lista de linhas
+</code></pre>
+
+<pre><code>['olha aqui o que eu criei\n', 'essa deve ser a segunda linha']
+</code></pre>
+
+<h2 id="projeto-salvando-a-agenda-em-nosso-arquivo">Projeto: Salvando a agenda em nosso arquivo</h2>
+
+<p>Em sala nós criamos um programa para nos ajudar a memorizar qualquer coisa.
+Mas sempre que saímos do programa ele perde toda a memória e nós temos que adicionar
+novos itens sempre.</p>
+
+<p>Com arquivos, nós podemos salvar os itens e recuperá-los quando abrimos o programa.</p>
+
+<pre><code class="language-python">import json
+import os
+import random
+
+try:
+    para_memorizar = json.load(open(&quot;minha_memoria.txt&quot;, &quot;r&quot;))
+except:
+    para_memorizar = {}
+
+opcao = &quot;&quot;
+while opcao != &quot;sair&quot;:
+    print(&quot;1) Adicionar&quot;)
+    print(&quot;2) Testar&quot;)
+    print(&quot;3) Ver tudo&quot;)
+    opcao = input(&quot;\nOpção: &quot;)
+
+    if opcao == &quot;1&quot;:
+        item = input(&quot;Item: &quot;)
+        resposta_certa = input(&quot;Resposta certa: &quot;)
+        para_memorizar[item] = resposta_certa
+    elif opcao == &quot;2&quot;:
+        item_para_testar = random.choice(list(para_memorizar.keys()))
+        os.system(&quot;clear&quot;)  # cls
+        adivinhar = input(
+            f&quot;\nQual seu palpite? A palavra é: {item_para_testar}\n&quot;)
+        if adivinhar == para_memorizar[item_para_testar]:
+            print(&quot;Acertou!\n&quot;)
+        else:
+            print(&quot;Precisa estudar mais!&quot;)
+    elif opcao == &quot;3&quot;:
+        print(para_memorizar)
+    elif opcao == &quot;sair&quot;:
+        minha_memoria = open(&quot;minha_memoria.txt&quot;, &quot;w&quot;)
+        minha_memoria.write(json.dumps(para_memorizar))
+
+</code></pre>
+
+<pre><code>1) Adicionar
+2) Testar
+3) Ver tudo
+
+Opção: 3
+{}
+1) Adicionar
+2) Testar
+3) Ver tudo
+
+Opção: 1
+Item: green
+Resposta certa: verde
+1) Adicionar
+2) Testar
+3) Ver tudo
+
+Opção: 3
+{'green': 'verde'}
+1) Adicionar
+2) Testar
+3) Ver tudo
+
+Opção: sair
+</code></pre>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+              
+                <li><a class="previous" href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/">Aula 2: Listas e Loops &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+           
+            <img width="600" src="https://anapaulagomes.github.io/aprendendo-python/images/python.png" alt="Aula 3: Dicionários e Arquivos">
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">Aula 3: Dicionários e Arquivos</a><small>&nbsp;&nbsp;December 11, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/">Aula 2: Listas e Loops</a><small>&nbsp;&nbsp;December 10, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/ola-mundo/">Aula 1: Olá, mundo!</a><small>&nbsp;&nbsp;December 9, 2019</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://bool.netlify.com">bool</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="bool"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="http://github.com/anapaulagomes/aprendendo-python"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://anapaulagomes.github.io/aprendendo-python//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

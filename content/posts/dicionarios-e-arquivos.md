@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Aula 3: dados abertos"
-img: "dados-abertos.png"
-date: "2019-11-11"
-notebook: "Aula 3 - Lidando com arquivos.ipynb"
+title:  "Aula 3: Dicionários e Arquivos"
+img: "python.png"
+date: "2019-12-11"
+notebook: "Aula 3 - Dicionários e arquivos.ipynb"
 ---
 
 ## Dicionários
@@ -168,3 +168,76 @@ meu_arquivo.readlines()  # te devolve uma lista de linhas
 
     ['olha aqui o que eu criei\n', 'essa deve ser a segunda linha']
 
+
+
+## Projeto: Salvando a agenda em nosso arquivo
+
+Em sala nós criamos um programa para nos ajudar a memorizar qualquer coisa.
+Mas sempre que saímos do programa ele perde toda a memória e nós temos que adicionar
+novos itens sempre.
+
+Com arquivos, nós podemos salvar os itens e recuperá-los quando abrimos o programa.
+
+
+```python
+import json
+import os
+import random
+
+try:
+    para_memorizar = json.load(open("minha_memoria.txt", "r"))
+except:
+    para_memorizar = {}
+
+opcao = ""
+while opcao != "sair":
+    print("1) Adicionar")
+    print("2) Testar")
+    print("3) Ver tudo")
+    opcao = input("\nOpção: ")
+
+    if opcao == "1":
+        item = input("Item: ")
+        resposta_certa = input("Resposta certa: ")
+        para_memorizar[item] = resposta_certa
+    elif opcao == "2":
+        item_para_testar = random.choice(list(para_memorizar.keys()))
+        os.system("clear")  # cls
+        adivinhar = input(
+            f"\nQual seu palpite? A palavra é: {item_para_testar}\n")
+        if adivinhar == para_memorizar[item_para_testar]:
+            print("Acertou!\n")
+        else:
+            print("Precisa estudar mais!")
+    elif opcao == "3":
+        print(para_memorizar)
+    elif opcao == "sair":
+        minha_memoria = open("minha_memoria.txt", "w")
+        minha_memoria.write(json.dumps(para_memorizar))
+
+```
+
+    1) Adicionar
+    2) Testar
+    3) Ver tudo
+    
+    Opção: 3
+    {}
+    1) Adicionar
+    2) Testar
+    3) Ver tudo
+    
+    Opção: 1
+    Item: green
+    Resposta certa: verde
+    1) Adicionar
+    2) Testar
+    3) Ver tudo
+    
+    Opção: 3
+    {'green': 'verde'}
+    1) Adicionar
+    2) Testar
+    3) Ver tudo
+    
+    Opção: sair

@@ -1,6 +1,6 @@
 ---
 title:  "Aula 1: Olá, mundo!"
-date:   2019-11-09 10:51:47 +0530
+date:   2019-12-09 10:51:47 +0530
 img: "python.png"
 notebook: "Aula 1 - Olá, mundo.ipynb"
 ---

@@ -1,6 +1,6 @@
 ---
-title:  "Aula 4: APIs"
-img: "twitter.png"
+title:  "Aula 4: Seu bot!"
+img: "bot.png"
 date: "2019-11-12"
 draft: true
 ---

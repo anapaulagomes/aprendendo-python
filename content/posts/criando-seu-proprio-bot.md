@@ -1,8 +1,8 @@
 ---
-title:  "Aula 2: seu próprio Bot"
-img: "bot.png"
-date: "2019-11-10"
-notebook: "Aula 2 - Listas e Dicionários.ipynb"
+title:  "Aula 2: Listas e Loops"
+img: "python.png"
+date: "2019-12-10"
+notebook: "Aula 2 - Listas e Loops.ipynb"
 ---
 
 # Listas

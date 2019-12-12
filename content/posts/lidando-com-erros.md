@@ -2,7 +2,7 @@
 layout: post
 title: Lidando com erros
 img: "lidando-com-erros.png"
-date: "2019-11-08"
+date: "2019-12-08"
 ---
 
 # Como lidar com os erros que aparecem na tela?

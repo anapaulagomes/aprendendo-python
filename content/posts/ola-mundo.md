@@ -33,12 +33,7 @@ Você pode mostrar outras coisas também:
 ```python
 print("Meu nome é Ana")
 print(f"Eu tenho {2019 - 1988} anos")
-print("
-C
-J
-C
-C
-")
+print("C\nJ\nC\nC\n")
 ```
 
     Meu nome é Ana
@@ -53,9 +48,9 @@ C
 
 # Variáveis e tipos de dados
 
-Mas não só de imprimir seu nome na tela viverá a pessoa programadora.:)
+Mas não só de imprimir seu nome na tela viverá a pessoa programadora. :)
 Seria muito legal se a gente conseguisse salvar informações. Isso é
-possível graças ás **variáveis**!
+possível graças às **variáveis**!
 
 
 ```python
@@ -309,3 +304,4 @@ print(f'TOTAL: {total}')
     TOTAL: 9
 
 
+Veja os códigos dessa lição [aqui](https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks).

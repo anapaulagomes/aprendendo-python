@@ -15,7 +15,6 @@ Você poderia criar uma variável pra cada um.
 seriado1 = "The Crown"
 seriado2 = "Bojack Horseman"
 seriado3 = "Explicando"
-
 ```
 
 Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas
@@ -40,8 +39,8 @@ notas = [10, 8.9, 7.5, 9.2]  # inteiros e decimais
 
 Crie listas com:
 
-* Coisas que você adora fazer em Feira de Santana
-* Coisas que você não gosta em Feira de Santana
+* Coisas que você adora fazer em sua cidade
+* Coisas que você não gosta em sua cidade
 * O que você mais curte fazer na internet
 
 PS.: a essa altura do campeonato você já deve ter notado umas **hashtags** rolando por aí.
@@ -297,5 +296,7 @@ que nada mais é que um loop que não acaba mais.
 while True:
     print('Eu vou executar pra sempre')
 ```
+
+Veja os códigos dessa lição [aqui](https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks).
 
 <!-- Imagem: https://clipground.com/ -->

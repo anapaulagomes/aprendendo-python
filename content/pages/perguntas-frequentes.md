@@ -1,12 +1,6 @@
 ---
-layout: post
-title: FAQ e materiais
-img: "faq.png"
-date: "2019-11-08"
----
-
-# Perguntas Frequentes
-
+layout: page
+title: Perguntas Frequentes
 ---
 
 **Eu preciso saber matemática pra ser uma pessoa programadora?**

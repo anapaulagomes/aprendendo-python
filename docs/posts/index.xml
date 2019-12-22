@@ -6,10 +6,33 @@
     <description>Recent content in Posts on Aprendendo Python</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://anapaulagomes.github.io/aprendendo-python/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aula 5: Criando um bot</title>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/</guid>
+      <description>Criando um bot Nessa aula vamos criar um bot para o Telegram. Para isso você precisa ter o Telegram instalado e configurado no seu celular.
+Configurando seu ambiente (computador)  Você precisa ter o PIP instalado (gerenciador de pacotes Python)  Salve o arquivo get-pip.py e, na mesma pasta que você salvou ele, execute:
+python get-pip.py  Em seguida instale o seguinte pacote:
+pip install python-telegram-bot  Acabamos de instalar o python-telegram-bot com a ajuda do PIP para criar um bot para o Telegram com Python.</description>
+    </item>
+    
+    <item>
+      <title>Aula 4: Enviando emails com Python!</title>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/</guid>
+      <description>Enviando emails Com Python é possível fazer muitas coisas, desde conectar com outros sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.
+O envio de emails pode ser útil em diversas circunstâncias. Algumas delas:
+ Notificar alguém em caso de erro Criação de um curso online por email Lembretes  Nessa atividade vamos criar um programa que envia emails a partir de um email do Gmail.</description>
+    </item>
     
     <item>
       <title>Aula 3: Dicionários e Arquivos</title>
@@ -24,10 +47,10 @@ Para resolver esse problema onde precisamos de um identificador único para arma
     
     <item>
       <title>Aula 2: Listas e Loops</title>
-      <link>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</link>
+      <link>https://anapaulagomes.github.io/aprendendo-python/posts/listas-e-loops/</link>
       <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/criando-seu-proprio-bot/</guid>
+      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/listas-e-loops/</guid>
       <description>Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.
 seriado1 = &amp;quot;The Crown&amp;quot; seriado2 = &amp;quot;Bojack Horseman&amp;quot; seriado3 = &amp;quot;Explicando&amp;quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:
 seriados = [&amp;quot;The Crown&amp;quot;, &amp;quot;Bojack Horseman&amp;quot;, &amp;quot;Explicando&amp;quot;] print(seriados)  [&#39;The Crown&#39;, &#39;Bojack Horseman&#39;, &#39;Explicando&#39;]  Você pode também criar listas combinando tipos diferentes:</description>
@@ -56,16 +79,6 @@ print(&amp;quot;Olá, mundo!&amp;quot;)  Olá, mundo!  Repare que você teve que
 Eu escrevi esse código e está dando erro:
 Código
 bebidas = 5 # 5 garrafas de refrigerante comidas = 100 # 100 pasteis convidados = None # vou decidir depois print(&#39;Bebidas por convidados:&#39;) print(bebidas/convidados) print(&#39;Comidas por convidados:&#39;) print(comidas/convidados)  Erro</description>
-    </item>
-    
-    <item>
-      <title>FAQ e materiais</title>
-      <link>https://anapaulagomes.github.io/aprendendo-python/posts/perguntas-frequentes-e-materiais-de-estudo/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://anapaulagomes.github.io/aprendendo-python/posts/perguntas-frequentes-e-materiais-de-estudo/</guid>
-      <description>Perguntas Frequentes Eu preciso saber matemática pra ser uma pessoa programadora?
-Não. Originalmente eu queria ser advogada e minha atenção estava toda focada em história, geografia e português. Minhas notas em matemática e física eram as piores. Graças a vários acasos acabei parando na área de computação e, apesar de matemática ser a fundação de muitas coisas, você não precisa derivar ou implementar cálculos complexos em 90% dos casos (essa estatística foi 100% retirada da minha cabeça).</description>
     </item>
     
   </channel>

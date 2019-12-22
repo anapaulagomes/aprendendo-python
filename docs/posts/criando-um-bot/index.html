@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aula 5: Criando um bot - Aprendendo Python</title>
+<meta name="description" content="Criando um bot Nessa aula vamos criar um bot para o Telegram. Para isso você precisa ter o Telegram instalado e configurado no seu celular.
+Configurando seu ambiente (computador)  Você precisa ter o PIP instalado (gerenciador de pacotes Python)  Salve o arquivo get-pip.py e, na mesma pasta que você salvou ele, execute:
+python get-pip.py  Em seguida instale o seguinte pacote:
+pip install python-telegram-bot  Acabamos de instalar o python-telegram-bot com a ajuda do PIP para criar um bot para o Telegram com Python."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Criando um bot Nessa aula vamos criar um bot para o Telegram. Para isso você precisa ter o Telegram instalado e configurado no seu celular.
+Configurando seu ambiente (computador)  Você precisa ter o PIP instalado (gerenciador de pacotes Python)  Salve o arquivo get-pip.py e, na mesma pasta que você salvou ele, execute:
+python get-pip.py  Em seguida instale o seguinte pacote:
+pip install python-telegram-bot  Acabamos de instalar o python-telegram-bot com a ajuda do PIP para criar um bot para o Telegram com Python." />
+<meta name="twitter:title" content="Aula 5: Criando um bot - Aprendendo Python" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Aula 5: Criando um bot - Aprendendo Python" property="og:title">
+<meta content="Criando um bot Nessa aula vamos criar um bot para o Telegram. Para isso você precisa ter o Telegram instalado e configurado no seu celular.
+Configurando seu ambiente (computador)  Você precisa ter o PIP instalado (gerenciador de pacotes Python)  Salve o arquivo get-pip.py e, na mesma pasta que você salvou ele, execute:
+python get-pip.py  Em seguida instale o seguinte pacote:
+pip install python-telegram-bot  Acabamos de instalar o python-telegram-bot com a ajuda do PIP para criar um bot para o Telegram com Python." property="og:description">
+<meta property="og:url" content="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/" />
+<meta property="og:site_name" content="Aprendendo Python" />
+
+<meta property="article:published_time" content="2019-12-13 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Aula 5: Criando um bot",
+    "genre": "",  
+    "url": "https:\/\/anapaulagomes.github.io\/aprendendo-python\/posts\/criando-um-bot\/",
+    "datePublished": "2019-12-13 00:00:00 \x2b0000 UTC",
+    "description": "Criando um bot Nessa aula vamos criar um bot para o Telegram. Para isso você precisa ter o Telegram instalado e configurado no seu celular.\nConfigurando seu ambiente (computador)  Você precisa ter o PIP instalado (gerenciador de pacotes Python)  Salve o arquivo get-pip.py e, na mesma pasta que você salvou ele, execute:\npython get-pip.py  Em seguida instale o seguinte pacote:\npip install python-telegram-bot  Acabamos de instalar o python-telegram-bot com a ajuda do PIP para criar um bot para o Telegram com Python.",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/aprendendo-python/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://anapaulagomes.github.io/aprendendo-python/">Aprendendo Python</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/sobre/">Sobre</a></li>
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/perguntas-frequentes/">Perguntas Frequentes</a></li>
+        <li class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <b>Para Professores</b>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/">Planejamento</a></li>
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://github.com/anapaulagomes/aprendendo-python/issues">Tem sugestões?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Aula 5: Criando um bot</h1>
+            <p class="post-meta"><time datetime='2019-12-13T00:00:00Z' itemprop="datePublished">December 13, 2019</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            
+
+<h1 id="criando-um-bot">Criando um bot</h1>
+
+<p>Nessa aula vamos criar um bot para o Telegram. Para isso você
+precisa ter o Telegram instalado e configurado no seu celular.</p>
+
+<h3 id="configurando-seu-ambiente-computador">Configurando seu ambiente (computador)</h3>
+
+<ul>
+<li>Você precisa ter o PIP instalado (gerenciador de pacotes Python)</li>
+</ul>
+
+<p>Salve o arquivo <a href="https://bootstrap.pypa.io/get-pip.py">get-pip.py</a> e,
+na mesma pasta que você salvou ele, execute:</p>
+
+<pre><code>python get-pip.py
+</code></pre>
+
+<p>Em seguida instale o seguinte pacote:</p>
+
+<pre><code>pip install python-telegram-bot
+
+</code></pre>
+
+<p>Acabamos de instalar o <code>python-telegram-bot</code> com a ajuda do PIP
+para criar um bot para o Telegram com Python.</p>
+
+<h3 id="criando-o-bot-no-telegram">Criando o bot no Telegram</h3>
+
+<p>Agora vamos criar o bot no Telegram. Abra seu aplicativo e busque
+por <strong>BotFather</strong>, um bot do próprio Telegram para criar outros bots. 🤖</p>
+
+<p>Para criar seu bot, envie para o BotFather: <code>/newbot</code></p>
+
+<p>Ele irá te fazer algumas perguntas (em inglês) nessa sequência:</p>
+
+<ul>
+<li>Nome do bot</li>
+<li>Username (usuário)</li>
+</ul>
+
+<p>Lembre-se de pôr um nome de usuário mais original. Nomes fáceis já foram,
+provavelmente, cadastrados por outras pessoas.</p>
+
+<p>Dando tudo certo você deve ver uma mensagem como a do final dessa tela:</p>
+
+<p><img src="/images/ppt_bot.jpg" alt="" /></p>
+
+<p>Copie todo o código depois de <em>Use this token to access the HTTP API:</em>.
+Ele é o seu token - um código único (tipo uma senha) para você
+gerenciar o seu bot. Guarde esse código bem guardado pois apenas com ele
+você poderá manter seu bot funcionando.</p>
+
+<h2 id="bot-pedra-papel-e-tesoura">Bot Pedra, papel e tesoura</h2>
+
+<p>Algumas aulas atrás nós aprendemos como criar o jogo Pedra, Papel e Tesoura
+com Python. Agora, usando a mesma lógica que havíamos desenvolvido, vamos
+criar o nosso bot.</p>
+
+<p>A ideia é que o jogador inicie um jogo e ele jogue contra o computador. Basicamente,
+precisamos que o jogador:</p>
+
+<ul>
+<li>inicie uma nova jogada</li>
+<li>diga qual a sua opção: pedra, papel ou tesoura</li>
+</ul>
+
+<p>Ao iniciar uma jogada, vamos saudar o jogador pelo seu nome e perguntar qual a opção.</p>
+
+<h2 id="métodos">Métodos</h2>
+
+<p>Durante as aulas utilizamos alguns métodos, como o <code>print()</code> mas não
+criamos os nossos próprios.
+Os métodos (ou funções) são trechos de código
+que podem isolar certa lógica e ter seu próprio contexto.</p>
+
+<p>Para criar um método (ou <em>declarar</em>) utilizamos a palavra reservada <strong>def</strong>.</p>
+
+<pre><code>def mostrar_nome_na_tela(nome):
+    print(nome)
+</code></pre>
+
+<p>O método <code>mostrar_nome_na_tela</code> recebe um argumento (ou parâmetro) chamado <code>nome</code>.
+Isso significa que sempre que usarmos (ou chamarmos) esse método precisamos
+passar um nome para ele:</p>
+
+<pre><code>mostrar_nome_na_tela(&quot;Ana Paula&quot;)
+</code></pre>
+
+<p>Esse método irá apenas mostrar o nome &ldquo;Ana Paula&rdquo; na tela mas se quisessemos
+mostrar apenas o primeiro nome, por exemplo, poderíamos.</p>
+
+<pre><code>def mostrar_nome_na_tela(nome):
+    primeiro_nome = nome.split(' ')[0]  # pega o primeiro nome antes do espaço
+    print(primeiro_nome)
+</code></pre>
+
+<p>O ponto aqui é: podemos fazer modificações nos argumentos e outras coisas que
+ficarão isoladas dentro do método.
+Isso permite deixar o nosso código mais organizado e mais fácil de ler.</p>
+
+<h2 id="voltando-ao-bot">Voltando ao bot</h2>
+
+<p>Aqui vamos precisar criar alguns métodos para amarrar um comportamento a certos comandos
+do bot.
+Antes de ver o código inteiro, vamos a uma explicação passo a passo:</p>
+
+<pre><code>bot = Updater('seu-token-aqui', use_context=True)
+</code></pre>
+
+<p>Nessa linha vamos conectar o seu código Python com o bot que já
+existe no Telegram. Pra isso o Telegram precisa saber que você
+é você e por isso passamos o token para o <code>Updater</code>.</p>
+
+<p>Logo depois precisamos dizer quem é que vai lidar com certos eventos.</p>
+
+<p>Acima nós estabelecemos que faríamos duas coisas: iniciar uma jogada nova
+e jogar (escolher pedra, papel ou tesoura).</p>
+
+<p>Para iniciar uma nova jogada, o usuário terá que enviar um <code>/jogar</code>.
+Uma palavra com a barra na frente no Telegram significa um comando.
+Para gerenciar um comando precisamos do <code>CommandHandler</code>. Nele
+vamos dizer qual o nome do comando (&ldquo;jogar&rdquo;) e qual o método que vai
+executar alguma ação quando o usuário enviar esse comando.</p>
+
+<pre><code>comando_jogar = CommandHandler('jogar', jogar)
+</code></pre>
+
+<p>Depois de criar o comando, associamos esse comando ao nosso
+recém-nascido bot. :)</p>
+
+<pre><code>bot.dispatcher.add_handler(comando_jogar)
+</code></pre>
+
+<p>Para entender o que o usuário está jogando, fazemos um
+esquema bem parecido: criamos algo para lidar com essa mensagem.
+A diferença é que vamos receber um texto e passar para
+o método <code>jogada</code>. Lá vamos verificar qual foi a jogada
+realizada pelo jogador.</p>
+
+<p><em>Trecho completo:</em></p>
+
+<pre><code>bot = Updater('seu-token-aqui', use_context=True)
+comando_jogar = CommandHandler('jogar', jogar)
+bot.dispatcher.add_handler(comando_jogar)
+
+mensagem = MessageHandler(Filters.text, jogada)
+bot.dispatcher.add_handler(mensagem)
+</code></pre>
+
+<p>Nos nossos métodos recebemos dois argumentos: <code>update</code> e <code>context</code>.
+Vamos nos concentrar no <code>update</code>, único usado até aqui.</p>
+
+<p>Com ele podemos:</p>
+
+<ul>
+<li><p>Pegar informações do usuário que enviou a mensagem:</p>
+
+<pre><code class="language-python"># seu primeiro nome:
+update.message.from_user.first_name
+</code></pre></li>
+
+<li><p>Pegar o texto digitado pelo usuário:</p>
+
+<pre><code class="language-python">update.message.text
+</code></pre></li>
+</ul>
+
+<p>Note que colocamos o texto em minúsculo utilizando o método
+<code>lower()</code> para facilitar a comparação com as opções disponíveis.</p>
+
+<ul>
+<li><p>Responder uma mensagem:</p>
+
+<pre><code>update.message.reply_text(f&quot;{jogada_do_humano} x {jogada_do_computador}&quot;)
+</code></pre></li>
+</ul>
+
+<p>Você pode ver o código completo a seguir:</p>
+
+<pre><code class="language-python">from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import random
+
+
+def jogar(update, context):
+    nome = update.message.from_user.first_name
+    update.message.reply_text(f'Qual a sua jogada, {nome}?\n Pedra, papel ou tesoura?')
+
+
+def jogada(update, context):
+    digitado_pelo_usuario = update.message.text.lower()
+    opcoes = ['pedra', 'papel', 'tesoura']
+    jogada_do_computador = random.choice(opcoes)
+
+    jogada_do_humano = None
+    for opcao in opcoes:
+        if opcao in digitado_pelo_usuario:
+            jogada_do_humano = opcao
+
+    update.message.reply_text(f&quot;{jogada_do_humano} x {jogada_do_computador}&quot;)
+    if jogada_do_humano:
+        if jogada_do_humano == jogada_do_computador:
+            update.message.reply_text(&quot;EMPATE!&quot;)
+        # pedra ganha de tesoura
+        if jogada_do_humano == &quot;pedra&quot; and jogada_do_computador == &quot;tesoura&quot;:
+            update.message.reply_text(&quot;Vitória do humano!&quot;)
+        elif jogada_do_computador == &quot;pedra&quot; and jogada_do_humano == &quot;tesoura&quot;:
+            update.message.reply_text(&quot;Vitória do computador!&quot;)
+        
+        # tesoura ganha de papel
+        if jogada_do_humano == &quot;tesoura&quot; and jogada_do_computador == &quot;papel&quot;:
+            update.message.reply_text(&quot;Vitória do humano!&quot;)
+        elif jogada_do_computador == &quot;tesoura&quot; and jogada_do_humano == &quot;papel&quot;:
+            update.message.reply_text(&quot;Vitória do computador!&quot;)
+        # papel ganha de pedra        
+        if jogada_do_humano == &quot;papel&quot; and jogada_do_computador == &quot;pedra&quot;:
+            update.message.reply_text(&quot;Vitória do humano!&quot;)
+        elif jogada_do_computador == &quot;papel&quot; and jogada_do_humano == &quot;pedra&quot;:
+            update.message.reply_text(&quot;Vitória do computador!&quot;)        
+    else:
+        update.message.reply_text('Opção inválida!')
+
+
+
+bot = Updater('seu-token-aqui', use_context=True)
+comando_jogar = CommandHandler('jogar', jogar)
+bot.dispatcher.add_handler(comando_jogar)
+
+mensagem = MessageHandler(Filters.text, jogada)
+bot.dispatcher.add_handler(mensagem)
+
+bot.start_polling()
+bot.idle()
+
+</code></pre>
+
+<p>Veja os códigos dessa lição <a href="https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks">aqui</a>.</p>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+              
+                <li><a class="previous" href="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/">Aula 4: Enviando emails com Python! &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+           
+            <img width="600" src="https://anapaulagomes.github.io/aprendendo-python/images/bot.png" alt="Aula 5: Criando um bot">
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/">Aula 5: Criando um bot</a><small>&nbsp;&nbsp;December 13, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/">Aula 4: Enviando emails com Python!</a><small>&nbsp;&nbsp;December 12, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">Aula 3: Dicionários e Arquivos</a><small>&nbsp;&nbsp;December 11, 2019</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://bool.netlify.com">bool</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="bool"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="http://github.com/anapaulagomes/aprendendo-python"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://anapaulagomes.github.io/aprendendo-python//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

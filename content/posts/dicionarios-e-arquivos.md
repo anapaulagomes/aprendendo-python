@@ -241,3 +241,5 @@ while opcao != "sair":
     3) Ver tudo
     
     Opção: sair
+
+Veja os códigos dessa lição [aqui](https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks).

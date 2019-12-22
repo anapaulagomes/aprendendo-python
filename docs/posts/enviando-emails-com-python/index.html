@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aula 4: Enviando emails com Python! - Aprendendo Python</title>
+<meta name="description" content="Enviando emails Com Python é possível fazer muitas coisas, desde conectar com outros sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.
+O envio de emails pode ser útil em diversas circunstâncias. Algumas delas:
+ Notificar alguém em caso de erro Criação de um curso online por email Lembretes  Nessa atividade vamos criar um programa que envia emails a partir de um email do Gmail."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Enviando emails Com Python é possível fazer muitas coisas, desde conectar com outros sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.
+O envio de emails pode ser útil em diversas circunstâncias. Algumas delas:
+ Notificar alguém em caso de erro Criação de um curso online por email Lembretes  Nessa atividade vamos criar um programa que envia emails a partir de um email do Gmail." />
+<meta name="twitter:title" content="Aula 4: Enviando emails com Python! - Aprendendo Python" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Aula 4: Enviando emails com Python! - Aprendendo Python" property="og:title">
+<meta content="Enviando emails Com Python é possível fazer muitas coisas, desde conectar com outros sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.
+O envio de emails pode ser útil em diversas circunstâncias. Algumas delas:
+ Notificar alguém em caso de erro Criação de um curso online por email Lembretes  Nessa atividade vamos criar um programa que envia emails a partir de um email do Gmail." property="og:description">
+<meta property="og:url" content="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/" />
+<meta property="og:site_name" content="Aprendendo Python" />
+
+<meta property="article:published_time" content="2019-12-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Aula 4: Enviando emails com Python!",
+    "genre": "",  
+    "url": "https:\/\/anapaulagomes.github.io\/aprendendo-python\/posts\/enviando-emails-com-python\/",
+    "datePublished": "2019-12-12 00:00:00 \x2b0000 UTC",
+    "description": "Enviando emails Com Python é possível fazer muitas coisas, desde conectar com outros sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.\nO envio de emails pode ser útil em diversas circunstâncias. Algumas delas:\n Notificar alguém em caso de erro Criação de um curso online por email Lembretes  Nessa atividade vamos criar um programa que envia emails a partir de um email do Gmail.",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/aprendendo-python/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://anapaulagomes.github.io/aprendendo-python/">Aprendendo Python</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/sobre/">Sobre</a></li>
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/perguntas-frequentes/">Perguntas Frequentes</a></li>
+        <li class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <b>Para Professores</b>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/">Planejamento</a></li>
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://github.com/anapaulagomes/aprendendo-python/issues">Tem sugestões?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Aula 4: Enviando emails com Python!</h1>
+            <p class="post-meta"><time datetime='2019-12-12T00:00:00Z' itemprop="datePublished">December 12, 2019</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            
+
+<h1 id="enviando-emails">Enviando emails</h1>
+
+<p>Com Python é possível fazer muitas coisas, desde conectar com outros
+sites como Youtube, Vagalume e Twitter (via APIs) e também enviar emails.</p>
+
+<p>O envio de emails pode ser útil em diversas circunstâncias. Algumas delas:</p>
+
+<ul>
+<li>Notificar alguém em caso de erro</li>
+<li>Criação de um curso online por email</li>
+<li>Lembretes</li>
+</ul>
+
+<p>Nessa atividade vamos criar um programa que envia emails a partir
+de um email do Gmail.</p>
+
+<p><strong>Importante</strong></p>
+
+<ul>
+<li>Emails institucionais podem não ter permissões para esse tipo de envio</li>
+
+<li><p>Se você tem o 2FA (autenticação de dois fatores ou two factor authentication) talvez precise criar uma senha para esse tipo de envio <a href="https://security.google.com/settings/security/apppasswords">aqui</a></p>
+
+<pre><code class="language-python">import smtplib
+
+server = smtplib.SMTP_SSL(
+'smtp.gmail.com', 465
+)
+server.login(
+&quot;seu_email@gmail.com&quot;,
+&quot;senha do seu email&quot;
+)
+
+assunto = &quot;Oi!&quot;
+texto = &quot;Esse email foi enviado com Python!&quot;
+mensagem = f'Subject: {assunto}\n\n{texto}'
+try:
+server.sendmail(
+    &quot;SEU_EMAIL@gmail.com&quot;, # remetente
+    &quot;EMAIL_QUE_VOCE_QUER_ENVIAR_UMA_MSG@gmail.com&quot;, # destinatario
+    mensagem
+)
+server.quit()
+except:
+print('Algo deu errado =/')
+else:
+print('Email enviado.')
+
+</code></pre></li>
+</ul>
+
+<p>Veja esse notebook <a href="https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks">aqui</a>.</p>
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+                    <li><a class="next" href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/">&laquo; Aula 5: Criando um bot</a></li>
+              
+              
+                <li><a class="previous" href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">Aula 3: Dicionários e Arquivos &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+           
+            <img width="600" src="https://anapaulagomes.github.io/aprendendo-python/images/bot.png" alt="Aula 4: Enviando emails com Python!">
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/">Aula 5: Criando um bot</a><small>&nbsp;&nbsp;December 13, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/">Aula 4: Enviando emails com Python!</a><small>&nbsp;&nbsp;December 12, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">Aula 3: Dicionários e Arquivos</a><small>&nbsp;&nbsp;December 11, 2019</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://bool.netlify.com">bool</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="bool"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="http://github.com/anapaulagomes/aprendendo-python"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://anapaulagomes.github.io/aprendendo-python//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

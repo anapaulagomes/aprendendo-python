@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aula 2: Listas e Loops - Aprendendo Python</title>
+<meta name="description" content="Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.
+seriado1 = &amp;quot;The Crown&amp;quot; seriado2 = &amp;quot;Bojack Horseman&amp;quot; seriado3 = &amp;quot;Explicando&amp;quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:
+seriados = [&amp;quot;The Crown&amp;quot;, &amp;quot;Bojack Horseman&amp;quot;, &amp;quot;Explicando&amp;quot;] print(seriados)  [&#39;The Crown&#39;, &#39;Bojack Horseman&#39;, &#39;Explicando&#39;]  Você pode também criar listas combinando tipos diferentes:"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://anapaulagomes.github.io/aprendendo-python/posts/listas-e-loops/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.
+seriado1 = &amp;quot;The Crown&amp;quot; seriado2 = &amp;quot;Bojack Horseman&amp;quot; seriado3 = &amp;quot;Explicando&amp;quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:
+seriados = [&amp;quot;The Crown&amp;quot;, &amp;quot;Bojack Horseman&amp;quot;, &amp;quot;Explicando&amp;quot;] print(seriados)  [&#39;The Crown&#39;, &#39;Bojack Horseman&#39;, &#39;Explicando&#39;]  Você pode também criar listas combinando tipos diferentes:" />
+<meta name="twitter:title" content="Aula 2: Listas e Loops - Aprendendo Python" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Aula 2: Listas e Loops - Aprendendo Python" property="og:title">
+<meta content="Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.
+seriado1 = &amp;quot;The Crown&amp;quot; seriado2 = &amp;quot;Bojack Horseman&amp;quot; seriado3 = &amp;quot;Explicando&amp;quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:
+seriados = [&amp;quot;The Crown&amp;quot;, &amp;quot;Bojack Horseman&amp;quot;, &amp;quot;Explicando&amp;quot;] print(seriados)  [&#39;The Crown&#39;, &#39;Bojack Horseman&#39;, &#39;Explicando&#39;]  Você pode também criar listas combinando tipos diferentes:" property="og:description">
+<meta property="og:url" content="https://anapaulagomes.github.io/aprendendo-python/posts/listas-e-loops/" />
+<meta property="og:site_name" content="Aprendendo Python" />
+
+<meta property="article:published_time" content="2019-12-10 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Aula 2: Listas e Loops",
+    "genre": "",  
+    "url": "https:\/\/anapaulagomes.github.io\/aprendendo-python\/posts\/listas-e-loops\/",
+    "datePublished": "2019-12-10 00:00:00 \x2b0000 UTC",
+    "description": "Listas E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos? Você poderia criar uma variável pra cada um.\nseriado1 = \x26quot;The Crown\x26quot; seriado2 = \x26quot;Bojack Horseman\x26quot; seriado3 = \x26quot;Explicando\x26quot;  Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas estão separadas. Com o Python você pode criar suas próprias listas:\nseriados = [\x26quot;The Crown\x26quot;, \x26quot;Bojack Horseman\x26quot;, \x26quot;Explicando\x26quot;] print(seriados)  [\x27The Crown\x27, \x27Bojack Horseman\x27, \x27Explicando\x27]  Você pode também criar listas combinando tipos diferentes:",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/aprendendo-python/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://anapaulagomes.github.io/aprendendo-python/">Aprendendo Python</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/sobre/">Sobre</a></li>
+        <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/perguntas-frequentes/">Perguntas Frequentes</a></li>
+        <li class="btn-group">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <b>Para Professores</b>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/">Planejamento</a></li>
+            <li><a href="https://anapaulagomes.github.io/aprendendo-python/pages/ideias/">Ideias de Projetos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a target="_blank" href="https://github.com/anapaulagomes/aprendendo-python/issues">Tem sugestões?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Aula 2: Listas e Loops</h1>
+            <p class="post-meta"><time datetime='2019-12-10T00:00:00Z' itemprop="datePublished">December 10, 2019</time></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            
+
+<h1 id="listas">Listas</h1>
+
+<p>E se você quiser guardar uma lista das mesmas coisas, como os seus seriados preferidos?
+Você poderia criar uma variável pra cada um.</p>
+
+<pre><code>seriado1 = &quot;The Crown&quot;
+seriado2 = &quot;Bojack Horseman&quot;
+seriado3 = &quot;Explicando&quot;
+</code></pre>
+
+<p>Conforme a lista for crescendo, vai ser difícil gerenciar todas as variáveis, já que elas
+estão separadas. Com o Python você pode criar suas próprias <strong>listas</strong>:</p>
+
+<pre><code class="language-python">seriados = [&quot;The Crown&quot;, &quot;Bojack Horseman&quot;, &quot;Explicando&quot;]
+print(seriados)
+</code></pre>
+
+<pre><code>['The Crown', 'Bojack Horseman', 'Explicando']
+</code></pre>
+
+<p>Você pode também criar listas combinando tipos diferentes:</p>
+
+<pre><code>notas = [10, 8.9, 7.5, 9.2]  # inteiros e decimais
+</code></pre>
+
+<h3 id="exercício">Exercício</h3>
+
+<p>Crie listas com:</p>
+
+<ul>
+<li>Coisas que você adora fazer em sua cidade</li>
+<li>Coisas que você não gosta em sua cidade</li>
+<li>O que você mais curte fazer na internet</li>
+</ul>
+
+<p>PS.: a essa altura do campeonato você já deve ter notado umas <strong>hashtags</strong> rolando por aí.
+Elas são chamadas de <strong>comentários</strong>. O conteúdo delas será ignorado pelo Python e você
+pode escrever o que você quiser. É importante para documentar o que você está fazendo ou
+pontos que queira explicar para o seu eu do futuro ou para o seu time.</p>
+
+<p><code># eu sou um comentário</code></p>
+
+<p>Comentários podem ter também múltiplas linhas:</p>
+
+<pre><code>&quot;&quot;&quot;
+Muitas
+Linhas
+Aqui
+&quot;&quot;&quot;
+</code></pre>
+
+<h2 id="projeto-pedra-papel-eeee-tesoooura">Projeto: Pedra, papel eeee tesoooura!</h2>
+
+<p>Quem nunca brincou de pedra, papel e tesoura, não é mesmo? :) Mas e se você
+jogasse contra o computador. Como seria? Nesse projeto criamos um joguinho para
+jogar esse jogo contra o computador e no final mostrar quantos pontos ele ou
+você acumularam.</p>
+
+<pre><code class="language-python">&quot;&quot;&quot;
+Regras:
+
+- Pedra ganha de Tesoura
+- Tesoura ganha de Papel
+- Papel ganha de Pedra
+&quot;&quot;&quot;
+import random
+
+
+opcoes = [&quot;pedra&quot;, &quot;papel&quot;, &quot;tesoura&quot;]
+
+pontos_do_computador = 0
+pontos_do_humano = 0
+
+print(&quot;Pedra, papel e tesoura\n\n&quot;)
+jogada_do_humano = &quot;&quot;
+
+while jogada_do_humano.lower() != &quot;sair&quot;:
+    jogada_do_humano = input(&quot;Qual a sua jogada?&quot;)
+    if jogada_do_humano in opcoes:
+        jogada_do_computador = random.choice(opcoes)
+        print(f&quot;Computador jogou: {jogada_do_computador}\n&quot;)
+
+        # pedra ganha de tesoura
+        if jogada_do_humano == &quot;pedra&quot; and jogada_do_computador == &quot;tesoura&quot;:
+            print(&quot;\o/ humano ganhou!&quot;)
+            pontos_do_humano = pontos_do_humano + 1
+        elif jogada_do_computador == &quot;pedra&quot; and jogada_do_humano == &quot;tesoura&quot;:
+            print(&quot;:/ computador ganhou!&quot;)
+            pontos_do_computador = pontos_do_computador + 1
+        
+        # tesoura ganha de papel
+        if jogada_do_humano == &quot;tesoura&quot; and jogada_do_computador == &quot;papel&quot;:
+            print(&quot;\o/ humano ganhou!&quot;)
+            pontos_do_humano = pontos_do_humano + 1
+        elif jogada_do_computador == &quot;tesoura&quot; and jogada_do_humano == &quot;papel&quot;:
+            print(&quot;:/ computador ganhou!&quot;)
+            pontos_do_computador = pontos_do_computador + 1
+
+        # papel ganha de pedra        
+        if jogada_do_humano == &quot;papel&quot; and jogada_do_computador == &quot;pedra&quot;:
+            print(&quot;\o/ humano ganhou!&quot;)
+            pontos_do_humano = pontos_do_humano + 1
+        elif jogada_do_computador == &quot;papel&quot; and jogada_do_humano == &quot;pedra&quot;:
+            print(&quot;:/ computador ganhou!&quot;)
+            pontos_do_computador = pontos_do_computador + 1
+
+        print(f&quot;\n\nHumano {pontos_do_humano} x {pontos_do_computador} Computador&quot;)
+    elif jogada_do_humano.lower() != &quot;sair&quot;:
+        print(f&quot;Escolha uma das opções: {opcoes}&quot;)
+
+</code></pre>
+
+<pre><code>Pedra, papel e tesoura
+
+
+Qual a sua jogada?pedra
+Computador jogou: pedra
+
+
+
+Humano 0 x 0 Computador
+Qual a sua jogada?papel
+Computador jogou: pedra
+
+\o/ humano ganhou!
+
+
+Humano 1 x 0 Computador
+Qual a sua jogada?tesoura
+Computador jogou: tesoura
+
+
+
+Humano 1 x 0 Computador
+Qual a sua jogada?tesoura
+Computador jogou: papel
+
+\o/ humano ganhou!
+
+
+Humano 2 x 0 Computador
+Qual a sua jogada?pedra
+Computador jogou: tesoura
+
+\o/ humano ganhou!
+
+
+Humano 3 x 0 Computador
+Qual a sua jogada?pedra
+Computador jogou: papel
+
+:/ computador ganhou!
+
+
+Humano 3 x 1 Computador
+Qual a sua jogada?sair
+</code></pre>
+
+<h2 id="mais-ação-com-listas">Mais ação com listas</h2>
+
+<p>Dá pra fazer bastante coisas com listas. Elas são uma estrutura de dados poderosa!</p>
+
+<p>Vamos ver como:</p>
+
+<ul>
+<li>adicionar</li>
+<li>remover</li>
+<li>buscar</li>
+<li>ordenar</li>
+</ul>
+
+<p>Elementos em uma lista!</p>
+
+<pre><code class="language-python"># primeiro, vamos ver o que tem nessa lista:
+
+print('--- O que tem na lista:')
+print(seriados)
+
+# adicionando itens a uma lista que já existe
+
+print('--- Novo item:')
+seriados.append('Irmandade')
+print(seriados)
+
+# acessando itens em uma lista
+
+print('--- Primeiro item da lista:')
+print(seriados[0])  # o primeiro item da lista - isso mesmo, Python começa a contar do zero!
+
+### Encontrando um item em uma lista
+
+print('--- Onde está The Crown?')
+onde_esta_esse_seriado = seriados.index('The Crown')  # O Python vai te dizer em que posição o que você busca está
+print(onde_esta_esse_seriado)
+print(seriados[onde_esta_esse_seriado])
+
+### Ordenando uma lista
+
+print('--- Seriados ordenados:')
+seriados = sorted(seriados)  # substituímos a lista desordenada pela ordenada
+print(seriados)
+
+### Deletando um item de uma lista
+
+print('--- Deletamos o primeiro e o último da lista')
+seriados.pop(0)  # deleta o primeiro da lista
+seriados.pop(0)  # deleta o útil da lista
+print(seriados)
+</code></pre>
+
+<pre><code>--- O que tem na lista:
+['The Crown', 'Bojack Horseman', 'Explicando']
+--- Novo item:
+['The Crown', 'Bojack Horseman', 'Explicando', 'Irmandade']
+--- Primeiro item da lista:
+The Crown
+--- Onde está The Crown?
+0
+The Crown
+--- Seriados ordenados:
+['Bojack Horseman', 'Explicando', 'Irmandade', 'The Crown']
+--- Deletamos o primeiro e o último da lista
+['Irmandade', 'The Crown']
+</code></pre>
+
+<h1 id="estruturas-de-repetição-ou-laços-loops">Estruturas de repetição (ou laços/loops)</h1>
+
+<p>Nós podemos mostrar os itens da lista um por um sem precisar acessar
+os índices (a posição) de cada um utilizando <strong>laços</strong>.</p>
+
+<p>O primeiro laço que vamos ver é o <strong>for</strong>.</p>
+
+<pre><code class="language-python">canais_do_youtube = ['Meteoro Brasil', 'Nerdologia', 'Se liga nessa história', 'Porta dos Fundos']
+
+# significa para UM canal NA lista de canais do youtube que eu gosto
+for canal in canais_do_youtube:
+    print(canal)
+
+</code></pre>
+
+<pre><code>Meteoro Brasil
+Nerdologia
+Se liga nessa história
+Porta dos Fundos
+</code></pre>
+
+<p>O <strong>for</strong> itera sob uma sequência. O que significa isso?
+Significa que ele vai passar item por item de uma sequência. A sequência que estamos
+utilizando agora é uma lista.</p>
+
+<p>Uma outra estrutura de laço é o <strong>while</strong>, que continuará executando até
+que uma condição seja falsa.</p>
+
+<pre><code class="language-python">numero_desejado = 10
+contador = 0
+
+while contador != numero_desejado:
+    contador = contador + 1
+    print(contador)
+
+</code></pre>
+
+<pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</code></pre>
+
+<p><strong>ATENÇÃO:</strong> cuidado com o <code>while</code>. Sem querer você pode acabar criando um <strong>loop infinito</strong>,
+que nada mais é que um loop que não acaba mais.</p>
+
+<pre><code class="language-python">while True:
+    print('Eu vou executar pra sempre')
+</code></pre>
+
+<p>Veja os códigos dessa lição <a href="https://github.com/anapaulagomes/aprendendo-python/tree/master/notebooks">aqui</a>.</p>
+
+<!-- Imagem: https://clipground.com/ -->
+
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+                    <li><a class="next" href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">&laquo; Aula 3: Dicionários e Arquivos</a></li>
+              
+              
+                <li><a class="previous" href="https://anapaulagomes.github.io/aprendendo-python/posts/ola-mundo/">Aula 1: Olá, mundo! &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+           
+            <img width="600" src="https://anapaulagomes.github.io/aprendendo-python/images/python.png" alt="Aula 2: Listas e Loops">
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Recent articles</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/criando-um-bot/">Aula 5: Criando um bot</a><small>&nbsp;&nbsp;December 13, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/enviando-emails-com-python/">Aula 4: Enviando emails com Python!</a><small>&nbsp;&nbsp;December 12, 2019</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://anapaulagomes.github.io/aprendendo-python/posts/dicionarios-e-arquivos/">Aula 3: Dicionários e Arquivos</a><small>&nbsp;&nbsp;December 11, 2019</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+                <div class="col-md-4 text-center mt25">All rights reserved by <a target="_blank" href="https://bool.netlify.com">bool</a></div>
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+                <a target="_blank" href="https://bool.netlify.com"><img src="https://img.shields.io/badge/Built%20by-bool-brightgreen.svg" alt="bool"></a>
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="http://github.com/anapaulagomes/aprendendo-python"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://anapaulagomes.github.io/aprendendo-python//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

@@ -30,7 +30,7 @@ Projeto da aula: Adivinhando um número
 | 03:15       | Entrada de dados | `input` |
 | 02:15       | Estruturas de controle | `if/else` |
 
-### Aula 2: Seu próprio bot
+### Aula 2: Listas e Loops
 
 Projeto da aula: Um bot para ajudar a memorizar coisas
 
@@ -44,9 +44,9 @@ Projeto da aula: Um bot para ajudar a memorizar coisas
 | 02:45       | Laços | `for/while` |
 | 03:30       | Exercício | Sugestão: implementar os jogos: Adivinhando um número |
 
-### Aula 3: Dados Abertos
+### Aula 3: Dicionários e Arquivos
 
-Projeto da aula: hackeando dados da prefeitura de Feira de Santana
+Projeto da aula: salvando e recuperando a sua agenda
 
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |
@@ -57,9 +57,9 @@ Projeto da aula: hackeando dados da prefeitura de Feira de Santana
 | 00:45       | Lidando com arquivos | Lendo e escrevendo em arquivos diferentes |
 | 01:45       | Lidando com erros    | introdução ao `try/except` |
 
-### Aula 4: APIs
+### Aula 4: Enviando emails
 
-Projeto da aula: um bot para o Twitter
+Projeto da aula:
 
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |
@@ -68,9 +68,9 @@ Projeto da aula: um bot para o Twitter
 | 00:15       | PIP e `requests` | Como utilizar o `pip` e a biblioteca `requests` |
 | 00:30       | Conectando a uma API | Conecta a API do Twitter |
 
-### Aula 5: Seu bot na rua
+### Aula 5: Criando um bot
 
-Projeto da aula: Deploy do bot criado pelos alunos no [PythonAnywhere](https://www.pythonanywhere.com/)
+Projeto da aula: criar um bot no Telegram
 
 | Duração     | Tópico          | Conteúdo  |
 | :---------: | :------------- | :----- |

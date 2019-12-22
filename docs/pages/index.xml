@@ -16,7 +16,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://anapaulagomes.github.io/aprendendo-python/pages/ideias/</guid>
-      <description>Aula 1: Olá, mundo!    Ideia Categoria Conhecimentos a serem exercitados Descrição     Adivinhando um número Jogo no terminal loops, if/else, input No início do jogo o jogador 1 deve inserir um número. O jogador 2 deve tentar adivinhar qual número foi digitado e o programa deve fornecer dicas se o número é maior ou menor que o digitado.   Salada de frutas (STOP ou adedanha) Jogo no terminal dicionários, loops, if/else, input Implementação do jogo STOP, onde dado uma letra o jogador precisa responder perguntas começando com a letra sorteada.</description>
+      <description>Aula 1: Olá, mundo!    Ideia Categoria Conhecimentos a serem exercitados Descrição     Adivinhando um número Jogo no terminal loops, if/else, input No início do jogo o jogador 1 deve inserir um número. O jogador 2 deve tentar adivinhar qual número foi digitado e o programa deve fornecer dicas se o número é maior ou menor que o digitado.   Salada de frutas (STOP ou adedanha) Jogo no terminal loops, if/else, input Implementação do jogo STOP, onde dado uma letra o jogador precisa responder perguntas começando com a letra sorteada.</description>
+    </item>
+    
+    <item>
+      <title>Perguntas Frequentes</title>
+      <link>https://anapaulagomes.github.io/aprendendo-python/pages/perguntas-frequentes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/perguntas-frequentes/</guid>
+      <description>Eu preciso saber matemática pra ser uma pessoa programadora?
+Não. Originalmente eu queria ser advogada e minha atenção estava toda focada em história, geografia e português. Minhas notas em matemática e física eram as piores. Graças a vários acasos acabei parando na área de computação e, apesar de matemática ser a fundação de muitas coisas, você não precisa derivar ou implementar cálculos complexos em 90% dos casos (essa estatística foi 100% retirada da minha cabeça).</description>
     </item>
     
     <item>
@@ -27,15 +37,6 @@
       <guid>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</guid>
       <description>Esse curso foi pensado para quem nunca programou na vida. Divido em 5 aulas, o curso tem duração total de 20 horas, podendo ser executadas de maneira independente (contanto que o básico, abordado na aula 1, seja coberto antes).
 Para que os alunos vejam o quão empolgante e as inúmeras possibilidades que programar traz, este curso busca ter um projeto por aula. Os projetos são bem definidos porém deixam espaço para que o aluno proponha ideias e aplique em áreas que o interessa mais.</description>
-    </item>
-    
-    <item>
-      <title>Regras do Curso</title>
-      <link>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://anapaulagomes.github.io/aprendendo-python/pages/regras/</guid>
-      <description>Não existe pergunta idiota Respeite a história e o ritmo de aprendizado das outras pessoas Tente se divertir enquanto aprende  Tem dúvidas? Veja o nosso Perguntas Frequentes.</description>
     </item>
     
     <item>

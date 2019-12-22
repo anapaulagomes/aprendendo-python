@@ -35,7 +35,7 @@ Não. Originalmente eu queria ser advogada e minha atenção estava toda focada 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://anapaulagomes.github.io/aprendendo-python/pages/planejamento-das-aulas/</guid>
-      <description>Esse curso foi pensado para quem nunca programou na vida. Divido em 5 aulas, o curso tem duração total de 20 horas, podendo ser executadas de maneira independente (contanto que o básico, abordado na aula 1, seja coberto antes).
+      <description>Esse curso foi pensado para quem nunca programou na vida. Divido em 5 aulas, o curso tem duração total de 20 horas. O único pré-requisito é ter conhecimentos de informática básica.
 Para que os alunos vejam o quão empolgante e as inúmeras possibilidades que programar traz, este curso busca ter um projeto por aula. Os projetos são bem definidos porém deixam espaço para que o aluno proponha ideias e aplique em áreas que o interessa mais.</description>
     </item>
     
@@ -45,7 +45,7 @@ Para que os alunos vejam o quão empolgante e as inúmeras possibilidades que pr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://anapaulagomes.github.io/aprendendo-python/pages/sobre/</guid>
-      <description>Até hoje não houve nada que me deixasse tão maravilhada quanto o que é possível fazer com programação. E eu gostaria de passar esse &amp;ldquo;super poder&amp;rdquo; adiante. :)
+      <description>Até hoje não houve nada que me deixasse tão maravilhada quanto o que é possível fazer com programação. E eu gostaria de passar esse &amp;ldquo;super poder&amp;rdquo; adiante. 🤓
 Esse curso de Python foi criado para introduzir pessoas que nunca programaram a programação e o objetivo é fazer com que esse processo seja o mais divertido possível.
 O curso é gratuito. Para colaborar abra um Pull Request ou deixe a sua issue no repositório Aprendendo Python.</description>
     </item>

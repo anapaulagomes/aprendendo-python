@@ -14,7 +14,7 @@ title: Ideias de Projetos
 
 | Ideia | Categoria         | Conhecimentos a serem exercitados  | Descrição  |
 | :---------: | :-------------: | :----- | :---- |
-| Forca | Jogo no terminal | `listas`, `loops`, `if/else`, `input`, `random` | Jogo estilo Flashcards. O jogador deve tentar adivinhar qual a palavra sorteada. |
+| Forca | Jogo no terminal | `listas`, `loops`, `if/else`, `input`, `random` | O jogador deve tentar adivinhar qual a palavra sorteada. |
 | Pedra, papel e tesoura | Jogo no terminal | `listas`, `if/else`, `input`, `random` | Um jogo contra o computador. |
 | Criar uma calculadora | Terminal | `loops`, `operadores aritméticos` | O programa deve receber do usuário dois números e um operador/operação (exemplo: "soma" ou "+") |
 

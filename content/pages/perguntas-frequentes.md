@@ -50,3 +50,4 @@ Todos os materiais abaixo são gratuitos.
 * [Tutorial Django Girls](https://tutorial.djangogirls.org/pt/)
 * [Git e GitHub](https://digitalinnovation.one/cursos/introducao-ao-github-e-comandos-essenciais-para-trabalhar-em-equipe?ref=certificate/1DCCBBE9)
 * [Khan Academy](https://pt.khanacademy.org/): cursos de computação e programação
+* [Pense em Python](https://penseallen.github.io/PensePython2e/)
